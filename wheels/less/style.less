@@ -70,6 +70,37 @@ html {
 	padding-right: 6%;
 }
 
+/* Прелоудер */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	background-color: @text;
+	.bike {
+		width: 80px;
+		height: 80px;
+		position: relative;
+		left: 50%;
+		top: 50%;
+		margin-left: -40px;
+		margin-right: -40px;
+		animation: roll 3s linear infinite;
+		@keyframes roll{
+			100% {transform: rotate(360deg); }
+		}		
+		i {
+			line-height: 1;
+			font-family: fontawesome;
+			font-size: 80px;
+			color: @light;
+			font-style: normal;
+		}
+	}
+}
+
 /* Убираем скролл у бокового меню */
 html.mm-wrapper_opened {
 	overflow-y: scroll;
@@ -153,11 +184,30 @@ html.mm-wrapper_opened {
 
 }
 
+.top-button {
+	position: fixed;
+	bottom: 30px; 
+	right: -100px;
+	cursor: pointer;
+	z-index: 10;
+	opacity: .8;	
+	transition: all .3s ease;
+	i {
+		font-family: fontawesome;
+		font-style: normal;
+		font-size: 70px;
+	}
+	&:hover {
+		color: darken(@text, -40%);
+	}
+	&.active {
+		right: 50px;
+	}
 
+}
 
 .main {
 	position: relative;
-	// height: 1113px;
 	min-height: 700px;
 	height: 100vh;
 	padding-top: 11rem;
@@ -411,6 +461,11 @@ html.mm-wrapper_opened {
 		}
 	}
 	.map {
+		opacity: .5;
+		transition: opasity .3s;
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 

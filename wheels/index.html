@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="theme-color" content="#1e1e1e">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Подключаем кнопку гамбургера -->
@@ -11,11 +12,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Подключаем скрипт и стили для mmenu -->
 	<script src="jQuery.mmenu-master/dist/jquery.mmenu.all.js"></script>
+	<script src="jQuery.mmenu-master/dist/addons/backbutton/jquery.mmenu.backbutton.js"></script>
 	<link href="jQuery.mmenu-master/dist/jquery.mmenu.all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Wheels</title>
 </head>
 <body>
+	<div class="preloader">
+		<div class="bike"><i class="far fa-life-ring"></i></div>
+	</div>
 	
 	<div id="my-page">
 
@@ -51,13 +56,19 @@
 	     				</ul>
 	     			</nav>
 	     			<!-- Боковое меню  -->
+
+	     			<!-- Кнопка наверх -->
+	     			<div class="top-button" title="Наверх">
+	     				<i class="fas fa-arrow-circle-up"></i>
+	     			</div>
+	     			<!-- Кнопка наверх -->
 	     			
 	     			<div class="wrapp">
 	     				<div class="main-content">
 	     					<div class="row">					
 	     						<div class="col-lg-12">
-	     							<h1 class="main-title wow fadeInRight">Welcome to wheels</h1>
-	     							<p class="main-subtitle wow fadeInRight">Your free psd template,<br>perfect for your next big idea<br><span class="subtitle-itl">by Pawel Betkowski</span></p>
+	     							<h1 class="main-title">Welcome to wheels</h1>
+	     							<p class="main-subtitle">Your free psd template,<br>perfect for your next big idea<br><span class="subtitle-itl">by Pawel Betkowski</span></p>
 	     						</div>
 	     					</div>
 	     				</div>
@@ -296,14 +307,14 @@
           	$('.hamburger').addClass('is-active');
           }).bind('close:finish', function() {
           	$('.hamburger').removeClass('is-active');
-          })          
+          })         
        });
     </script>
     <script src="js/wow.min.js"></script>
     <script>
     	new WOW().init();
 	</script>
-
+	<!-- Перемотка к блоку меню -->
 	<script>
 		$(".scroll_to").click(function () {
 		    var elementClick = $(this).attr("href");
@@ -312,5 +323,29 @@
 		    return false;
 		});
 	</script>
+	<!-- Перемотка к блоку меню -->
+
+	<!-- Кнопка наверх -->
+	<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > $(this).height()) {
+				$('.top-button').addClass('active');
+			} else {
+				$('.top-button').removeClass('active');
+			}
+		});
+		$('.top-button').click(function() {
+			$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+		});
+	</script>
+	<!-- Кнопка наверх -->
+
+	<!-- Прелоудер -->
+	<script>
+		$(window).on('load', function() {
+			$('.preloader').delay(1000).fadeOut('slow');
+		})
+	</script>
+	<!-- Прелоудер -->
 </body>
 </html>
