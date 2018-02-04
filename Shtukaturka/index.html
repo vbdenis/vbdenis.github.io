@@ -775,7 +775,13 @@
     <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function(){
-        $('.owl-carousel').owlCarousel();
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          dots: false,
+          items: 1,
+          nav: true,
+          autoHeight:true,
+        });
       });
     </script>
     <!-- Подключаем стили слик слайдер -->
