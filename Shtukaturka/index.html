@@ -11,6 +11,8 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css"/>
   </head>
   <body>
   
@@ -184,13 +186,13 @@
         <div class="feedback-slider-item">
           <div class="row">
             <div class="col-md-6">
-              <div class="fotorama" data-nav="thumbs">
-                <a href="img/feedback/photo/1.jpg"><img src="img/feedback/photo/thumbs/1_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/2.jpg"><img src="img/feedback/photo/thumbs/2_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/3.jpg"><img src="img/feedback/photo/thumbs/3_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/4.jpg"><img src="img/feedback/photo/thumbs/4_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/5.jpg"><img src="img/feedback/photo/thumbs/5_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/6.jpg"><img src="img/feedback/photo/thumbs/6_thumb.jpg" alt=""></a>
+              <div class="owl-carousel owl-theme">
+                <img src="img/feedback/photo/1.jpg" alt="">
+                <img src="img/feedback/photo/2.jpg" alt="">
+                <img src="img/feedback/photo/3.jpg" alt="">
+                <img src="img/feedback/photo/4.jpg" alt="">
+                <img src="img/feedback/photo/5.jpg" alt="">
+                <img src="img/feedback/photo/6.jpg" alt="">
               </div>
             </div>
             <div class="col-md-6">
@@ -220,13 +222,13 @@
         <div class="feedback-slider-item" >
           <div class="row">
             <div class="col-md-6">
-              <div class="fotorama" data-widht="100%" data-nav="thumbs">
-                <a href="img/feedback/photo/1.jpg"><img src="img/feedback/photo/thumbs/1_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/2.jpg"><img src="img/feedback/photo/thumbs/2_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/3.jpg"><img src="img/feedback/photo/thumbs/3_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/4.jpg"><img src="img/feedback/photo/thumbs/4_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/5.jpg"><img src="img/feedback/photo/thumbs/5_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/6.jpg"><img src="img/feedback/photo/thumbs/6_thumb.jpg" alt=""></a>
+              <div class="owl-carousel owl-theme">
+                <img src="img/feedback/photo/1.jpg" alt="">
+                <img src="img/feedback/photo/2.jpg" alt="">
+                <img src="img/feedback/photo/3.jpg" alt="">
+                <img src="img/feedback/photo/4.jpg" alt="">
+                <img src="img/feedback/photo/5.jpg" alt="">
+                <img src="img/feedback/photo/6.jpg" alt="">
               </div>
             </div>
             <div class="col-md-6">
@@ -256,13 +258,13 @@
         <div class="feedback-slider-item">
           <div class="row">
             <div class="col-md-6">
-             <div class="fotorama" data-nav="thumbs">
-                <a href="img/feedback/photo/1.jpg"><img src="img/feedback/photo/thumbs/1_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/2.jpg"><img src="img/feedback/photo/thumbs/2_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/3.jpg"><img src="img/feedback/photo/thumbs/3_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/4.jpg"><img src="img/feedback/photo/thumbs/4_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/5.jpg"><img src="img/feedback/photo/thumbs/5_thumb.jpg" alt=""></a>
-                <a href="img/feedback/photo/6.jpg"><img src="img/feedback/photo/thumbs/6_thumb.jpg" alt=""></a>
+             <div class="owl-carousel owl-theme">
+                <img src="img/feedback/photo/1.jpg" alt="">
+                <img src="img/feedback/photo/2.jpg" alt="">
+                <img src="img/feedback/photo/3.jpg" alt="">
+                <img src="img/feedback/photo/4.jpg" alt="">
+                <img src="img/feedback/photo/5.jpg" alt="">
+                <img src="img/feedback/photo/6.jpg" alt="">
               </div>
             </div>
             <div class="col-md-6">
@@ -769,12 +771,16 @@
  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Подключаем owl карусель -->
+    <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel();
+      });
+    </script>
     <!-- Подключаем стили слик слайдер -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <!-- Подключаем фотораму -->
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>    
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
