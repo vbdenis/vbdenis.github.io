@@ -1,0 +1,67 @@
+/* TOPLINE START */
+.topline	
+	padding: 15px 25px 0
+	background-color: #fff
+	&-logo
+		display: inline-block
+		vertical-align: bottom
+		width: 50%
+		&__img
+			max-width: 100%
+			display: inline-block
+			margin-bottom: 20px
+	&-cost
+		width: 25%		
+		display: inline-block
+		margin-bottom: 35px
+		a
+			font-size: 23px
+			font-weight: 400
+			color: $accent
+			font-variant: small-caps
+	&-phone
+		width: 24%	
+		display: inline-block
+		text-align: right
+		font-size: 31px
+		font-weight: 400
+		color: $text-color
+		margin-bottom: 35px
+		&::before
+			display: block
+			content: "с 9 до 21 без выходных"
+			text-align: right
+			font-size: 16px
+	&-hamburger
+		display: none
+
+	&-navigation
+		text-align: center
+		margin: 0 auto 40px
+		ul
+			background-color: #fff
+			font-size: 0
+			width: 100%			
+			li				
+				text-align: center
+				display: inline-block				
+				border-right: 1px solid $text-color
+				width: 20%
+				&:last-child
+					border: none
+				a
+					display: block
+					padding: 16px 0 18px 0
+				 // height: 57px
+				 width: 100%
+					font-size: 24px
+					font-weight: 400
+					text-decoration: none
+					color: lighten($text-color, 5)
+				 transition: all .35s ease
+				 &:hover
+				 	color: #fff
+				 	background-color: #7bc3d5
+/* TOPLINE END */
+				 
+
