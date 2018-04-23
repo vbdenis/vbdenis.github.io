@@ -105,11 +105,6 @@ textarea {
 
 /* Убираем скролл при попапе и моб-меню */
 
-.fixed {
-  position: fixed;
-  width: 100%;
-}
-
 /* Interface end */
 
 body {
