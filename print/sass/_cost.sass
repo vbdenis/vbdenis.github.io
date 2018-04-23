@@ -1,0 +1,68 @@
+.cost
+		padding-top: 80px
+.price
+	margin-bottom: 80px
+	width: 100%
+	border: 1px solid #e1eaf1
+	border-collapse: collapse
+	padding: 5px
+	thead
+		background-color: $text-color-main
+		color: #ffffff
+		text-align: center
+		th
+			padding: 20px 12px 20px 12px
+			&:first-child
+				text-align: left
+				padding: 20px 12px 20px 25px
+	tbody
+		td
+			font-size: 14px
+			padding: 15px 12px 15px 12px
+			text-align: center
+			&:first-child
+				text-align: left
+				padding: 15px 12px 15px 25px
+		tr
+			&:nth-child(odd)
+				background-color: #f2f7fb
+			&:last-child
+				background-color: #ffffff
+	&-item
+		cursor: pointer
+		&:hover
+			color: #ffffff
+			font-weight: 800
+			background-color: $accent
+.extra
+	border: 1px solid #ffffff
+	border-top: 1px solid #e1eaf1
+	border-bottom: 1px solid #e1eaf1
+	p
+		&:first-child
+			color: $text-color-main
+			font-weight: 800
+
+.video
+	position: relative
+	&:after
+		cursor: pointer
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+		height: 100%
+		background: url(../img/video-overlay.jpg) center no-repeat
+		background-size: cover
+
+.overlay-off
+	&:after
+		display: none
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.popular
+	padding-top: 80px
+ &-content
+ 	display: flex
+ 	flex-direction: row
+ 	justify-content: flex-start
+ 	// align-items: flex-end
+ 	flex-wrap: wrap
+ &-block
+ 	margin-right: 20px
+ 	margin-bottom: 35px
+ 	&_title
+ 		margin-bottom: 20px
+ 		a
+ 			color: $text-color-main
+ 			font-family: 'Open Sans', sans-serif
+ 			font-size: 18px
+ 			font-weight: 800
+ 			text-decoration: underline
+ 			// transition: all 0.35s ease
+ 			&:hover
+ 				color: $accent
+
+ &-order
+ 	position: relative
+ 	padding: 35px
+ 	align-self: flex-end
+ 	width: 295px
+ 	height: 226px
+ 	box-shadow: 0 34px 49px rgba(229, 10, 98, 0.16)
+ 	border: 8px solid #e50a62
+ 	background-color: #ffffff
+ 	&_link
+ 		color: $accent
+ 		font-size: 18px
+ 		font-weight: 800
+ 		&:hover
+ 			color: $text-color-main
+
+ 	&_arrow
+ 		position: absolute
+ 		right: 35px
+ 		bottom: 33px
+ 		transition: all 0.35s ease
+ 		&:hover
+ 			transform: scale(1.2)
+

@@ -1,0 +1,86 @@
+.footer
+	padding-top: 80px
+	padding-bottom: 1px
+	background-color: #2e2771
+
+	&-content
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		color: #ffffff
+		margin-bottom: 80px
+
+	&-block
+		font-size: 14px
+		&-title
+			position: relative
+			margin-bottom: 40px
+			color: #ffffff
+			font-family: "Fira Sans", sans-serif
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: 1.0px
+			&:after
+				content: ''
+				position: absolute
+				bottom: -20px	
+				left: 0
+				width: 61px
+				height: 2px
+				background-color: $accent
+		&-list
+			&-left
+				// margin-right: 10%
+			&_item
+				a
+					color: #ffffff
+					text-decoration: none
+					line-height: 24px
+		&-services-wrap
+			// display: flex
+			// justify-content: space-between
+			// align-items: flex-start
+		&-contacts
+			padding-left: 15%
+			&_phone
+				position: relative
+				font-weight: 800
+				letter-spacing: 1px
+				&:before
+					content: ''
+					background: url(../img/footer/phone.png) 0 0 no-repeat
+					position: absolute
+					left: -35px
+					top: 5px
+					width: 16px
+					height: 16px
+			&_time
+				margin-bottom: 12px
+			&_email
+				a
+					color: #b1c2e8
+					text-decoration: none
+			&_adress
+				position: relative
+				margin-top: 30px
+				margin-bottom: 12px
+				&:before
+					content: ''
+					background: url(../img/footer/location.png) 0 0 no-repeat
+					position: absolute
+					left: -33px
+					top: 5px
+					width: 12px
+					height: 20px
+			&_way
+				a
+					color: #b1c2e8
+					text-decoration: none
+
+.footer-block-services
+	display: inline-block
+	margin-left: 80px
+	vertical-align: top
+	&:first-child
+		margin-left: 0

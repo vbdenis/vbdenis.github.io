@@ -1,0 +1,33 @@
+.portfolio
+	padding-top: 80px
+	&-slider
+		&_item
+			margin-left: 10px
+			margin-right: 10px
+
+.slider-wrapper /* Для добавлени отступов между слайдами */
+	// max-width: 950px
+	margin-left: -10px
+	margin-right: -10px
+
+.slick-slide
+	outline: none
+
+.slider-arrow
+	position: absolute
+	top: 49%
+	width: 19px
+	height: 24px
+	z-index: 10
+	cursor: pointer
+	&-portfolio
+		&_right
+			right: -5%
+			background: #fff url(../img/portfolio/right-arr.png) center no-repeat
+		&_left
+			left: -5%
+			background: #fff url(../img/portfolio/left-arr.png) center no-repeat
+
+.slick-dots li button:before
+	font-size: 50px !important
+	color: $text-color-main !important

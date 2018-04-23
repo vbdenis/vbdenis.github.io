@@ -1,0 +1,63 @@
+*
+	box-sizing: border-box
+
+.container
+	position: relative
+	// width: 1250px
+	max-width: 1300px
+	padding: 0px 25px
+	margin: 0 auto
+
+.container-content
+	max-width: 950px
+	position: relative
+	margin-left: 15%
+
+.section-title
+	position: relative
+	margin-bottom: 40px
+	color: #393185
+	font-family: "Fira Sans", sans-serif
+	font-size: 24px
+	font-weight: 400
+	text-transform: uppercase
+	letter-spacing: 2.4px
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: -19%
+		width: 84px
+		height: 3px
+		background-color: $accent
+.pay-line
+	&:before
+		left: -32%
+
+.no-line
+	&:before
+		content: ''
+		display: none
+
+
+.button	
+	padding: 11px 40px
+	color: #ffffff
+	font-size: 12px
+	font-weight: 400
+	line-height: 21px
+	text-transform: uppercase
+	letter-spacing: 1.8px
+	background-color: $accent
+	border: 2px solid transparent
+	cursor: pointer
+	transition: all 0.35s ease 
+	&:hover
+		background-color: #fff
+		color: $accent
+		border: 2px solid $accent
+
+/* Убираем скролл при попапе и моб-меню */
+.fixed
+	position: fixed
+	width: 100%
