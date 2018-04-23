@@ -181,6 +181,30 @@
   </div>
 </template>
 
+<script>
+  var fireballSize = 22; /*задаем размер фаерболла*/
+  var getFireballSpeed = function(left){
+    if (left == true) {
+      return 50;
+    } else {
+      return 50;
+    } /*Задаем скорость фаерболла.  Если left — true, то фаербол летит по ветру и функция возвращает скорость равную 5, иначе он летит против ветра со скоростью 2. */
+  };
+  var wizardSpeed = 3; /*скорость передвижения мага*/
+  var wizardWidth = 70; /*ширина мага*/
+  var getWizardHeight = function(){
+    var wizardHeight = wizardWidth * 1.337;
+    return wizardHeight;
+  }; /*задает высоту мага*/
+  var getWizardX = function(width){
+    return width / 2;
+  }; /*задает положение мага при появлении по оси х*/
+  var getWizardY = function(height){
+    return (height / 3) * 2;
+  }; /*задает положение мага при появлении по оси y*/
+</script>
+
+<script src="js/stat.js"></script>
 <script src="js/game.js"></script>
 
 </body>
