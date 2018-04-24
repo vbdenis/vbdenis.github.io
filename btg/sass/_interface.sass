@@ -1,0 +1,113 @@
+/* Контейнер бутстрапа */
+.container-fluid
+	max-width: 1200px
+
+/* Кнопочки */
+.button
+	padding: 10px 25px
+	font-size: 15px
+	font-weight: 700
+	color: $text-color-ligth
+	border: none
+	// border: 2px solid transparent
+	border-radius: 50px
+	background-image: linear-gradient(-18deg, #084568 0%, #2e76a0 50%, #073f5f 100%)	
+	cursor: pointer
+	transition: all .35s ease
+	&:hover
+		background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%)
+
+	&-light
+		border: 2px solid $text-color-ligth
+		opacity: 1
+		background-image: none
+		background-color: transparent
+		&:hover
+			color: $text-color-dark
+			background-color: #fff
+			background-image: none
+
+
+/* Настройки главного слайдера */
+.slick-slide
+	outline: none
+.slider-arrow
+	position: absolute
+	top: 25%
+	height: 47px
+	width: 24px
+	z-index: 99
+	transition: all .35s ease
+	cursor: pointer
+	&__right
+		right: 1.5%		
+		background: url(../img/arrow-right.png) center no-repeat
+		&:hover
+			transform: scale(1.2)
+	&__left
+		left: 1.5%		
+		background: url(../img/arrow-left.png) center no-repeat
+		&:hover
+			transform: scale(1.2)
+
+.slider-arrow__right__allworld
+	top: 50%
+.slider-arrow__left__allworld
+	top: 50%
+
+
+.slick-dots
+	bottom: -115px
+
+.slick-dots li
+	width: 15px
+	height: 15px
+	border: 2px solid #fff
+	border-radius: 50%
+
+.slick-dots li button:before
+	top: -2px
+	left: -2px
+	border-radius: 50%
+
+.slick-dots li.slick-active
+	border: 2px solid #0b5e8f
+.slick-dots li.slick-active button:before
+	width: 15px
+	height: 15px
+	color: #0b5e8f
+	opacity: 1
+	background-color: #0b5e8f
+
+
+/* Убираем скролл при попапе и моб-меню */
+.fixed
+	overflow: hidden
+
+/* Заголовки секций */
+.section-title
+	display: inline-block
+	position: relative
+	margin-bottom: 40px
+	color: $text-color-dark
+	font-size: 23px
+	font-weight: 700
+	text-transform: uppercase
+	letter-spacing: 0.46px
+	&-line
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 45%
+			background: url(../img/tittle-line-light.png) no-repeat
+			width: 106px
+			height: 2px
+		&::before
+			left: -130px
+		&::after
+			right: -130px
+
+
+
+
+

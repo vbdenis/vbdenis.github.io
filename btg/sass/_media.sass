@@ -1,0 +1,438 @@
+@media (max-width: 1300px)
+	.main-slider, .allworld-slider
+		max-width: 90%
+		margin: 0 auto
+
+	.slider-arrow
+		top: 25%
+		&__right
+			right: -2.5%
+		&__left
+			left: -2.5%
+
+	.slider-arrow__right__allworld
+		top: 50%
+	.slider-arrow__left__allworld
+		top: 50%
+
+@media (max-width: 1199px)
+	.header
+		margin-bottom: 40px
+		&-company
+			font-size: 14px
+			letter-spacing: 0.28px
+		&-logo
+			&::before, &::after
+				display: none
+
+	.header-in
+		margin-bottom: 0
+		&-company
+			font-size: 14px
+			letter-spacing: 0.28px
+		&-logo
+			&::before, &::after
+				display: none
+	.slick-dots
+		bottom: -30px
+
+	.footermenu
+		margin-bottom: 20px
+
+	.leftmenu
+		&-block
+		&-list
+			&__item
+				a
+					width: 85%
+					min-width: 350px
+
+/* #########################################991 MEDIA############################## */	
+@media (max-width: 991px)
+	.button
+		&:hover
+			background-image: linear-gradient(-18deg, #084568 0%, #2e76a0 50%, #073f5f 100%)
+		&-light
+			&:hover
+				color: $text-color-ligth
+				background-color: transparent
+				background-image: none
+
+	.slider-arrow
+		&__right, &__left
+			&:hover
+				transform: none
+
+	.topmenu
+		margin-bottom: 50px
+		&-list
+			&__item
+				a
+					&::after
+					&:hover
+						&::after
+							width: 0px
+
+	.topmenu-in
+		margin-bottom: 50px
+		&-list
+			&__item
+				a
+					&::after
+					&:hover
+						&::after
+							width: 0px
+
+	.main
+		text-align: center
+		min-height: 800px
+	.header
+		&-company
+			font-size: 20px
+			margin-bottom: 30px
+		&-logo
+			display: inline-block
+			margin-bottom: 30px
+			&::before, &::after
+				display: inline-block
+			&::before
+				left: 164px
+			&::after
+				right: 164px
+		&-contacts
+			text-align: center
+			&__phone
+				display: block
+				margin-right: 0
+				margin-bottom: 20px
+				font-size: 20px
+			&__button
+				display: block
+				margin-bottom: 30px
+
+	.header-in
+		text-align: center
+		&-company
+			font-size: 20px
+			margin-bottom: 30px
+		&-logo
+			display: inline-block
+			margin-bottom: 30px
+			&::before, &::after
+				display: inline-block
+			&::before
+				left: 164px
+			&::after
+				right: 164px
+		&-contacts
+			text-align: center
+			&__phone
+				display: block
+				margin-right: 0
+				margin-bottom: 20px
+				font-size: 20px
+			&__button
+				display: block
+				margin-bottom: 30px
+
+	.title-wrap
+		position: static
+		height: auto
+
+	.services
+		&-block
+			// background-color: $accent
+			&__descr
+				// color: $text-color-ligth
+				top: 25px
+			&__button
+				bottom: 30px
+				color: $text-color-dark
+				border: 2px solid $accent
+				background-color: #fff
+				background-image: none
+				&:hover
+					color: $accent
+
+		&:hover
+			.services-block
+				background-color: #fff
+				&__descr
+					color: $accent	
+				&-custome
+					&__img1		
+						background: #fff url(../img/services/globe.png) center center no-repeat
+						background-size: contain
+						transform: none							
+					&__img2		
+						background: #fff url(../img/services/hands.png) center center no-repeat
+						background-size: contain
+						transform: none							
+					&__img3		
+						background: #fff url(../img/services/block.png) center center no-repeat
+						background-size: contain	
+						transform: none						
+					&__img4		
+						background: #fff url(../img/services/cran.png) center center no-repeat
+						background-size: contain
+						transform: none							
+					&__img5		
+						background: #fff url(../img/services/boxes.png) center center no-repeat
+						background-size: contain
+						transition: all .35s ease
+						transform: none
+					&__img6		
+						background: #fff url(../img/services/calc.png) center center no-repeat
+						transform: none							
+
+
+	.container-about
+		padding-left: 15px
+	.about
+		padding-top: 30px
+		padding-bottom: 30px
+		text-align: center
+		&-text
+			&__subtitle
+				margin-bottom: 25px
+			&__descr
+				text-align: justify
+				margin-bottom: 25px
+	.news
+		&-block
+			&:hover
+				transform: none
+				box-shadow: none
+
+	.allworld
+		text-align: center
+
+	.partners
+		&-img
+			filter: none
+			opacity: 1
+			&:hover
+				transform: none
+				box-shadow: none
+
+	.footermenu
+		margin-bottom: 30px
+
+	.leftmenu
+		&-block
+		&-list
+			&__item
+				a
+					width: 85%
+					min-width: 280px
+
+	.send-feedback
+		input
+			display: block
+			width: 100%
+
+	.leftmenu
+		&-list
+			list-style-type: none
+			&__item
+				img
+					display: inline-block
+					width: 25px
+					max-height: 25px
+					margin-right: 20px
+					transition: all .35s ease
+				a
+					display: inline-block
+					padding: 10px
+					width: 100%
+					height: 100%
+					text-decoration: none
+					color: $text-color-dark
+					font-size: 16px
+					font-weight: 400
+					letter-spacing: 0.32px
+					transition: all .35s ease
+					&:hover
+						background-image: none
+						color: $text-color-dark
+						transform: none
+						box-shadow: none
+						img
+							filter: none
+	.leftmenu-list__item-active
+		a
+			color: $text-color-ligth
+
+/* #########################################767 MEDIA############################## */
+@media (max-width: 767px)
+	.main
+		min-height: 700px
+
+	.main-content
+		&__title
+			font-size: 40px			
+			line-height: 45px
+
+	.services-block-wrap
+		padding: 30px 80px
+
+	.news
+		&-block
+			&__date
+				text-align: center
+				margin-left: 0
+
+	.allworld
+		&-content
+			&__title
+				margin-top: 50px
+				font-size: 40px			
+				line-height: 45px
+			&__button
+				margin-bottom: 50px
+
+	.section-title-partners
+			margin-bottom: 50px
+
+	.message
+		padding-top: 50px
+		padding-bottom: 50px
+		&-block
+			&-line
+				&__input
+					width: 90%
+
+	.footer
+		&-logo
+			margin-bottom: 30px
+
+	.leftmenu
+		&-block
+		&-list
+			&__item
+				a
+					width: 50%
+					min-width: 280px
+
+	.calloverlay
+		.callmodal
+			padding-top: 15px
+			padding-bottom: 15px
+			width: 90%
+
+	.fastoverlay
+		.fastmodal
+			padding-top: 15px
+			padding-bottom: 15px
+			width: 90%
+
+/* #########################################575 MEDIA############################## */
+@media (max-width: 575px)
+	.header
+		&-logo
+			&::before, &::after
+				display: none
+		&-contacts
+			&__button
+				margin-bottom: 30px
+
+	.header-in
+		&-logo
+			&::before, &::after
+				display: none
+		&-contacts
+			&__button
+				margin-bottom: 30px
+
+	.main
+		// position: relative
+		background: #272e3c url(../img/main/main-bg.jpg) 70% 70% no-repeat
+		// min-height: auto
+	.main-dots
+		position: relative
+		bottom: -30px
+		margin-bottom: 50px
+	.allworld-dots
+		position: relative
+		bottom: 0px
+		// margin-bottom: 30px
+
+	.main-slider
+		margin-bottom: 50px
+
+	.main-content
+		&__title
+			font-size: 30px
+			line-height: 40px
+			margin-bottom: 15px
+
+	.section-title-line
+		&::before, &::after
+			display: none
+
+	.services-block-wrap
+		padding: 30px 10px
+	.services
+		&-block
+			margin: 0 auto
+			margin-bottom: 30px
+			max-width: 90%
+			padding: 60px 10px 10px 5%
+
+	.news
+		padding-top: 50px
+		margin-bottom: 50px
+
+	.container-fluid-allworld
+		padding-right: 0px
+		padding-left: 0px
+
+	.allworld
+		min-height: 400px
+		&-content
+			&__title
+				font-size: 20px
+				line-height: 40px
+				margin-bottom: 15px
+			&__subtitle
+				font-size: 16px
+
+	.partners
+		margin-top: -30px
+
+	.message
+		&-block
+			&__small
+				font-size: 13px
+
+		
+	.content
+		&-text
+			text-align: justify
+
+	.section-title-content
+		display: block
+		text-align: center
+
+	.accord-btn
+		// display: block
+		text-align: center
+
+	.scrl
+		overflow-x: scroll !important
+
+	.feedback
+		&-block
+			&-title
+		&-form
+			text-align: center
+
+				
+/* #########################################575 MEDIA############################## */
+
+// @media (max-width: 348px)
+// 	.main
+// 		background: #272e3c url(../img/main/main-bg.jpg) 70% 70% no-repeat
+// 		min-height: 750px
+// 	.main-dots
+// 		bottom: -40px

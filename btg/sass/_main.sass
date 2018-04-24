@@ -1,0 +1,208 @@
+.main
+	position: relative
+	min-height: 900px
+	background: #272e3c url(../img/main/main-bg.jpg) center no-repeat
+	background-size: cover
+	padding-top: 45px
+	color: $text-color-ligth
+	overflow: hidden
+
+.header
+	margin-bottom: 40px
+	&-company
+		font-size: 14px
+		letter-spacing: 0.28px
+	&-logo
+		position: relative
+		text-align: center
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 50%
+			background: url(../img/tittle-line.png) no-repeat
+			width: 106px
+			height: 2px
+		&::before
+			left: -110px
+		&::after
+			right: -110px
+	&-contacts
+		text-align: right
+		&__phone
+			display: inline-block
+			margin-right: 5%
+			font-size: 16px
+			font-weight: 700
+			letter-spacing: 0.32px
+		&__button
+			display: inline-block
+
+.header-in
+	padding-top: 35px
+	padding-bottom: 35px
+	background-color: $accent
+	color: $text-color-ligth
+	&-company
+		font-size: 14px
+		letter-spacing: 0.28px
+	&-logo
+		position: relative
+		text-align: center
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 50%
+			background: url(../img/tittle-line.png) no-repeat
+			width: 106px
+			height: 2px
+		&::before
+			left: -110px
+		&::after
+			right: -110px
+	&-contacts
+		text-align: right
+		&__phone
+			display: inline-block
+			margin-right: 5%
+			font-size: 16px
+			font-weight: 700
+			letter-spacing: 0.32px
+		&__button
+			display: inline-block
+
+	
+.topmenu
+	text-align: center
+	margin: 0 auto
+	margin-bottom: 160px
+	&-list
+		list-style-type: none
+		&__item
+			display: inline
+			margin-left: 40px
+			&:first-child
+				margin-left: 0
+			a
+				position: relative
+				letter-spacing: 0.32px
+				text-decoration: none
+				font-weight: 700
+				color: $text-color-ligth
+				transition: color .3s ease-in-out
+				&::after
+					position: absolute
+					left: 0
+					bottom: -10px
+					content: ''
+					height: 2px
+					width: 0px
+					background-color: #0b5e8f
+					transition: width .35s ease-in-out
+				&:hover
+					color: darken($text-color-ligth, 15)
+					&::after
+						width: 35px
+		.loop
+			color: #000
+			position: absolute
+			margin-left: -15px
+			background-color: #f8f8f8			
+			border: none
+			border-bottom-right-radius: 15px
+			border-top-right-radius: 15px
+			width: 0px
+			z-index: 0
+			transition: all .35s ease
+			opacity: 0
+			&-open
+				padding-left: 18px
+				// width: 150px
+				width: 10%
+				opacity: 1
+
+		.search
+			z-index: 1
+			&:hover
+				&::after
+					width: 0
+
+
+.topmenu-in
+	text-align: center
+	margin: 0 auto
+	margin-top: 40px
+	&-list
+		list-style-type: none
+		&__item
+			display: inline
+			margin-left: 40px
+			&:first-child
+				margin-left: 0
+			a
+				position: relative
+				letter-spacing: 0.32px
+				text-decoration: none
+				font-weight: 700
+				color: $text-color-ligth
+				transition: color .3s ease-in-out
+				&::after
+					position: absolute
+					left: 0
+					bottom: -10px
+					content: ''
+					height: 2px
+					width: 0px
+					background-color: #0b5e8f
+					transition: width .35s ease-in-out
+				&:hover
+					color: darken($text-color-ligth, 15)
+					&::after
+						width: 35px
+		.loop
+			color: #000
+			position: absolute
+			margin-left: -15px
+			background-color: #f8f8f8			
+			border: none
+			border-bottom-right-radius: 15px
+			border-top-right-radius: 15px
+			width: 0px
+			z-index: 0
+			transition: all .35s ease
+			opacity: 0
+			&-open
+				padding-left: 18px
+				// width: 150px
+				width: 10%
+				opacity: 1
+
+		.search
+			z-index: 1
+			&:hover
+				&::after
+					width: 0
+		.search
+			&:hover
+				&::after
+					width: 0
+
+.link-active
+	color: darken($text-color-ligth, 15) !important
+	&::after
+		width: 35px !important
+
+
+.main-content
+	&__title
+		font-size: 61px
+		font-weight: 700
+		line-height: 67px
+		letter-spacing: 1.22px
+		margin-bottom: 25px
+	&__subtitle
+		letter-spacing: 0.32px
+		line-height: 30px
+		margin-bottom: 30px
+
+	.main-slider
+		margin-bottom: 30px

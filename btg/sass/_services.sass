@@ -1,0 +1,109 @@
+.wrap
+	position: relative
+	background-color: #f8f8f8
+.title-wrap
+	position: absolute
+	top: -120px
+	left: 0	
+	width: 100%
+	height: 125px
+	padding-top: 45px
+	background-color: #f8f8f8
+	text-align: center
+.section-title-services
+	margin-bottom: 0
+.services-block-wrap
+	padding: 30px 30px	
+.services
+	background-color: #f8f8f8
+	&-block
+		position: relative
+		padding: 60px 30px 30px 50px
+		height: 170px
+		background-color: #fff
+		text-align: left
+		transition: all .35s ease
+		overflow: hidden
+		cursor: pointer
+		margin-bottom: 30px
+		&__img
+			display: inline-block
+			vertical-align: middle
+			width: 55px
+			height: 55px
+		&__descr
+			position: absolute
+			display: inline-block
+			text-align: right			
+			vertical-align: middle
+			font-size: 16px
+			font-weight: 700
+			top: 60px
+			right: 30px
+			transition: all .35s ease
+		&__button
+			text-decoration: none
+			position: absolute
+			bottom: -50px
+			right: 30px
+			transition: all .5s ease
+
+		&-custome
+			&__img1		
+				background: #fff url(../img/services/globe.png) center center no-repeat
+				background-size: contain
+				transition: all .35s ease
+			&__img2		
+				background: #fff url(../img/services/hands.png) center center no-repeat
+				background-size: contain
+				transition: all .35s ease
+			&__img3		
+				background: #fff url(../img/services/block.png) center center no-repeat
+				background-size: contain
+				transition: all .35s ease
+			&__img4		
+				background: #fff url(../img/services/cran.png) center center no-repeat
+				background-size: contain
+				transition: all .35s ease
+			&__img5		
+				background: #fff url(../img/services/boxes.png) center center no-repeat
+				background-size: contain
+				transition: all .35s ease
+			&__img6		
+				background: #fff url(../img/services/calc.png) center center no-repeat
+				transition: all .35s ease
+		&:hover
+			background-color: $accent
+			.services-block
+				&__descr
+					top: 25px
+					color: $text-color-ligth
+				&__button
+					bottom: 30px
+				&-custome
+					&__img1		
+						background: $accent url(../img/services/globe-w.png) center center no-repeat
+						background-size: contain						
+						transform: scale(1.3)
+					&__img2		
+						background: $accent url(../img/services/hands-w.png) center center no-repeat
+						background-size: contain
+						transform: scale(1.3)
+					&__img3		
+						background: $accent url(../img/services/block-w.png) center center no-repeat
+						background-size: contain
+						transform: scale(1.3)
+					&__img4		
+						background: $accent url(../img/services/cran-w.png) center center no-repeat
+						background-size: contain
+						transform: scale(1.3)
+					&__img5		
+						background: $accent url(../img/services/boxes-w.png) center center no-repeat
+						background-size: contain
+						transform: scale(1.3)
+					&__img6		
+						background: $accent url(../img/services/calc-w.png) center center no-repeat
+						transform: scale(1.3)
+
+
+
