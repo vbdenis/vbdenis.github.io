@@ -1,0 +1,341 @@
+@media (max-width: 1199px)	
+	.main
+		.form
+			&-input
+				max-width: 62%	
+/* #########################################NEW MEDIA############################## */
+
+@media (max-width: 991px)
+	.button
+		&:hover
+			background-color: $accent
+		&_o
+			&:hover
+				background-color: #fff
+				color: $text-color-grey			
+				border: 1px solid
+
+	.slider-arrow
+		&_manuf		
+			&__right
+				&:hover
+					background: #fff url(../img/manufacture/right.png) center no-repeat
+			&__left
+				&:hover
+					background: #fff url(../img/manufacture/left.png) center no-repeat
+		&_feedback
+			&__right
+				&:hover
+					background: #fff url(../img/manufacture/right.png) center no-repeat
+			&__left
+				&:hover
+					background: #fff url(../img/manufacture/left.png) center no-repeat
+
+	.overlay
+		.popup
+			width: 80vw
+
+	.topmenu
+		&-list		
+			&__item
+	   font-size: 10px
+	   &:hover
+			 	background-color: #373737 
+
+	.header
+		&-logo
+			width: 60%
+			height: 40px
+		&-contacts
+			&__button
+				padding: 3px 3px 3px 4px
+				width: 30px
+				height: 30px
+
+	.main		
+		&-text
+			text-align: center
+		.form
+			&-title			
+				padding-right: 0px
+			&-input
+				max-width: 72%	
+
+	.manufacture
+		padding: 50px 0 30px 0
+		&-slider
+			&_bottom
+				height: 100px
+				overflow-y: hidden
+				padding-left: 10px
+				padding-right: 10px
+				img
+					margin: 0px 3px
+		&-text
+			text-align: center
+			&__title
+				margin-top: 0px
+				margin-left: 0px
+				margin-bottom: 17px
+				padding: 8px 0px 8px 0px	
+				width: 100%
+				max-width: 100%
+				font-size: 28px
+			&__descr
+				font-size: 16px
+				width: 100%
+				margin-bottom: 22px
+				max-width: 100%
+
+	.clients
+		&-block			
+			padding-left: 5px
+			padding-right: 5px
+			filter: none
+
+	.feedback
+		&-slider
+			max-width: 550px
+
+/* #########################################NEW MEDIA############################## */
+
+@media (max-width: 767px)
+	body 
+		padding-top: 5px	
+
+	.overlay
+		.popup
+			width: 85vw
+			&-close
+				position: absolute
+				top: -18px
+				right: 1px
+				font-size: 37px
+			&-tittle 
+				font-size: 18px
+				line-height: 45px
+			&-form
+				padding: 2% 1%
+				&-header
+					font-size: 20px
+					span 
+						display: block
+						margin-top: 5px
+						font-size: 16px
+				&__label
+					margin-top: 17px
+					font-size: 16px
+					font-weight: 300
+					line-height: 30px
+				&__input
+					width: 90%
+					height: 45px
+				&__btn
+					min-width: 170px
+					width: 90%
+					height: 45px
+					margin-left: 0
+
+
+	.header
+		&-logo		
+			background: url(../img/mobile-logo.png) center no-repeat
+			background-size: 100%
+			margin-left: 20px
+			width: 35px
+			height: 35px
+		&-contacts
+			&__phone
+				font-size: 17px
+
+	.main		
+		&-text
+		.form
+			&-input
+				max-width: 61%
+
+	.productions
+		&-block
+			&__img
+				min-height: auto
+
+	.manufacture
+		&-slider
+			&_bottom
+				height: auto
+	.feedback
+		&-slider
+			max-width: 300px
+
+
+	.contacts
+		padding-top: 30px
+		&-block
+			text-align: center
+			position: static
+			left: 0
+			top: 0
+			padding: 0px 10px 10px 10px
+			&__address
+				display: block
+				vertical-align: top
+				margin-right: 0
+				&:first-child
+					&::before
+						background: none
+						left: 0
+						width: 0
+						height: 0
+			&__phone
+				display: block
+				&::before
+					background: none
+					left: 0
+					width: 0
+					height: 0
+			&__mail
+				display: block
+				&::before
+					background: none
+					left: 0
+					width: 0
+					height: 0
+				
+	.map
+		height: 350px
+
+/* #########################################NEW MEDIA############################## */
+
+@media (max-width: 575px)		
+	body 
+		padding-top: 1px
+
+	.section-title
+		margin-bottom: 13px
+		font-size: 22px
+		&::after
+			content: ""
+
+	.header
+		&-logo		
+			background: url(../img/mobile-logo.png) center no-repeat
+			background-size: 100%
+			margin-left: 40px
+			width: 35px
+			height: 35px
+		&-contacts
+			&__phone
+				font-size: 14px
+				margin-right: 0
+				&:first-child::after
+					margin-left: 0
+					border-right: none
+				&s
+					flex-direction: column
+
+	.main
+		text-align: center
+		&-block-1, &-block-2
+			padding-top: 50px
+			padding-bottom: 50px
+		&-text
+			&__title
+				margin-bottom: 10px
+				font-size: 22px
+				color: $accent
+			&__subtitle
+				font-size: 18px
+				margin-bottom: 35px
+			&__form
+				padding: 10px
+				background-color: transparent
+		.form
+			display: block
+			&-title
+				padding-right: 0
+				font-size: 15px
+				line-height: 1.4
+				&__free
+					margin-top: 15px
+			&-input
+				max-width: 100%
+				padding: 15px
+				text-align: center
+				display: block
+				margin-bottom: 13px
+
+	.advantage
+		padding: 24px 0px 24px 0px
+		&-block
+			margin-bottom: 20px
+			&__quantity
+				font-size: 30px
+				sup			
+					font-size: 20px
+			&__clarification
+				font-size: 14px
+		&-card
+			margin-bottom: 8px
+	.flex-wrap
+		flex-direction: column
+
+	.productions
+		padding: 30px 0px 30px 0px
+		&-block
+			display: block
+			width: 100%
+			margin-bottom: 20px
+			&__img
+				margin-bottom: 10px
+			&__name
+				margin-bottom: 10px
+				font-size: 18px
+
+	.offer
+		padding: 50px 0px 50px 0px
+		&-title
+			font-size: 20px
+			&_small
+				margin-top: 15px
+				font-size: 16px
+		&-form
+			&__label
+				font-size: 14px
+
+	.manufacture
+		padding: 30px 0 0  0
+		&-slider
+			&_bottom
+				height: auto
+				overflow-y: hidden
+				padding-left: 10px
+				padding-right: 10px
+				img
+					margin: 0px 3px
+		&-text
+			text-align: center
+			&__title
+				margin-top: 0px
+				margin-left: -15px
+				margin-bottom: 17px
+				padding: 8px 0px 8px 0px	
+				min-width: 100vw
+				font-size: 20px
+			&__descr
+				font-size: 14px
+				width: 100%
+				margin-bottom: 22px
+
+	.clients
+		padding: 60px 0px 30px 0px
+		&-wrap
+		&-block
+			margin-bottom: 7px	
+			height: 95px
+			flex-basis: 49%
+
+	.feedback
+		padding-top: 35px
+		padding-bottom: 35px
+		&-slider
+			max-width: 280px
