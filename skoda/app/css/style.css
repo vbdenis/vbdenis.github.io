@@ -577,6 +577,10 @@ p.subtitle {
     line-height: 30px;
   }
 
+  .header {
+    padding: 40px 0px;
+  }
+
   .header_logo a img {
     height: 30px;
   }
