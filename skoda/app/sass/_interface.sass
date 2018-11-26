@@ -1,0 +1,54 @@
+*
+	box-sizing: border-box
+body, ul, li, h1, h2, h3, h4, h5 
+	padding: 0
+	margin: 0
+select, textarea, input, button
+	outline: none
+h1, .h1
+	font-size: 22px
+	margin-top: 40px
+	margin-bottom: 20px
+	color: $black
+	br
+		display: none
+h2, .h2
+	font-size: 20px
+	line-height: 1.1
+	letter-spacing: -0.5px
+	margin-top: 40px
+	margin-bottom: 20px
+	color: $black
+img
+	max-width: 100%
+p 
+	margin: 20px 0
+	br
+		display: none
+.container 
+	max-width: 1240px
+	padding: 0px 20px
+	margin: 0 auto
+section, .section 
+	padding: 40px 0
+	.container
+		> h1, > .h1
+			margin-top: 0
+		> h2, > .h2
+			margin-top: 0
+section *  
+	&:last-child
+		margin-bottom: 0
+section h2
+	text-transform: uppercase
+.bg-light-grey 
+	background-color: $light-grey-blue
+.bg-very-light-grey 
+	background-color: $very-light-pink
+.color-w
+	color: #fff
+.clearfix
+	&:after
+		content: ""
+		display: table
+		clear: both
