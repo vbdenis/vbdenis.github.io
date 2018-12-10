@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="stylesheet" href="css/libs/uikit.min.css">
+	<link rel="stylesheet" href="css/libs/slick.css">
+	<link rel="stylesheet" href="css/libs/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Каталог</title>
+</head>
+<body>
+	<header class="header">
+		<div class="uk-container uk-visible-large">
+			<div class="uk-grid">
+				<div class="uk-width-medium-1-3">
+					<a href="/" class="logo">
+						<img src="img/logo-demo.jpg" alt="logo">
+					</a>
+				</div>
+				<div class="uk-width-medium-1-3">
+					<div class="top-description">Лозунг или другие важные вещи <br>короткой строкой</div>
+				</div>
+				<div class="uk-width-medium-1-3 uk-text-right">
+					<a class="phone" href="tel:+88005553535">+7&nbsp;(000)&nbsp;123-45-67</a>
+					<a class="back-call" href="#backCall" data-uk-modal>заказать обратный звонок</a>
+				</div>
+			</div>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="../main.html" class="active">Главная</a></li>
+					<li>
+						<a href="/">Компания</a>
+						<ul class="sublist">
+							<li><a href="">О компании</a></li>
+							<li><a href="">История</a></li>
+							<li><a href="">Лицензии</a></li>
+							<li><a href="">Реквизиты</a></li>
+							<li><a href="staff.html">Сотрудники</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="../catalog.html">Каталог</a>
+						<ul class="sublist">
+							<li><a href="">Электрощитовое оборудование</a></li>
+							<li><a href="catalog-inner.html">Кабельно-проводниковая продукция</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Услуги</a>
+						<ul class="sublist">
+							<li><a href="">Электромонтажные работы</a></li>
+							<li><a href="">КИПиА</a></li>
+							<li><a href="">Пуско-наладочные работы</a></li>
+							<li><a href="">Проектирование</a></li>
+							<li><a href="">Комплексные поставки электрооборудования</a></li>
+							<li><a href="">Комплексные поставки кабельно-проводниковой продукции</a></li>
+						</ul>
+					</li>
+					<li><a href="projects.html">Проекты</a></li>
+					<li><a href="">Новости</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="uk-container uk-hidden-large mobile-header">
+			<div class="uk-grid">
+				<div class="uk-width-1-2">
+					<a href="/" class="logo">
+						<img src="img/logo-demo.jpg" alt="logo">
+					</a>
+				</div>
+				<div class="uk-width-1-2 uk-text-right">
+					<div class="btn-block">
+						<a href="#backCall" data-uk-modal><span class="icon icon-phone"></span></a>
+						<a href="mailto:e-mail@example.com"><span class="icon icon-envelope"></span></a>
+						<a href="#offcanvasMenu" data-uk-offcanvas="{mode:'slide'}"><span class="icon icon-menu"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="offcanvasMenu" class="uk-offcanvas">
+			    <div class="uk-offcanvas-bar">
+			    	<div class="uk-panel">
+			    		<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+							<li><a href="../main.html" class="active">Главная</a></li>
+							<li class="uk-parent">
+								<a href="#">Компания</a>
+								<ul class="uk-nav-sub">
+									<li><a href="">О компании</a></li>
+									<li><a href="">История</a></li>
+									<li><a href="">Лицензии</a></li>
+									<li><a href="">Реквизиты</a></li>
+									<li><a href="staff.html">Сотрудники</a></li>
+								</ul>
+							</li>
+							<li class="uk-parent">
+								<a href="#">Каталог</a>
+								<ul class="uk-nav-sub">
+									<li><a href="">Электрощитовое оборудование</a></li>
+									<li><a href="../catalog-inner.html">Кабельно-проводниковая продукция</a></li>
+								</ul>
+							</li>
+							<li class="uk-parent">
+								<a href="#">Услуги</a>
+								<ul class="uk-nav-sub">
+									<li><a href="">Электромонтажные работы</a></li>
+									<li><a href="">КИПиА</a></li>
+									<li><a href="">Пуско-наладочные работы</a></li>
+									<li><a href="">Проектирование</a></li>
+									<li><a href="">Комплексные поставки электрооборудования</a></li>
+									<li><a href="">Комплексные поставки кабельно-проводниковой продукции</a></li>
+								</ul>
+							</li>							
+							<li><a href="projects.html">Проекты</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Контакты</a></li>
+			    		</ul>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+	</header>
+
+	<div class="uk-container">
+		<div class="page-top">
+			<h1>Каталог</h1>
+			<ul class="uk-breadcrumb">
+				<li><a href="">Главная</a></li>
+				<li><span>Каталог</span></li>
+			</ul>			
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="uk-container">
+			<div class="uk-grid">
+				<div class="uk-width-medium-10-10 uk-width-large-3-10">
+					<aside class="left-sidebar">
+						<div class="title uk-hidden-large">Каталог<span class="icon icon-down-arrow"></span></div>
+						<ul>
+							<li><a href="">Электрощитовое оборудование</a></li>
+							<li><a href="catalog-inner.html">Кабельно-проводниковая продукция</a></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="uk-width-medium-10-10 uk-width-large-7-10">
+					<p>Бла бла бла компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании </p>
+					<div class="catalog-list">
+						<div class="uk-grid">
+							<div class="uk-width-large-1-2">
+								<a class="item" href="">
+									<div class="uk-grid">
+										<div class="uk-width-1-3">
+											<div class="image">
+												<img src="img/card-1.jpg" alt="">
+											</div>
+										</div>
+										<div class="uk-width-2-3">
+											<div class="title">Электрощитовое оборудование</div>
+											<div class="text">Широкий выбор и так далее и так далее и так далее и так далее и так далее</div>
+										</div>
+									</div>
+								</a>
+							</div><!-- uk-width-large-1-2 -->							
+
+							<div class="uk-width-large-1-2">
+								<a class="item" href="catalog-inner.html">
+									<div class="uk-grid">
+										<div class="uk-width-1-3">
+											<div class="image">
+												<img src="img/card-2.jpg" alt="">
+											</div>
+										</div>
+										<div class="uk-width-2-3">
+											<div class="title">Кабельно-проводниковая продукция</div>
+											<div class="text">Еще более широкий выбор и так далее и так далее и так далее и так далее и так далее</div>
+										</div>
+									</div>
+								</a>
+							</div><!-- uk-width-large-1-2 -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="uk-container">
+			<div class="uk-grid">
+				<div class="uk-width-medium-6-10">
+					<div class="uk-grid">
+						<div class="uk-width-medium-1-3">
+							<ul>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Что-то</a></li>
+							</ul>
+						</div>
+						<div class="uk-width-medium-1-3">
+							<ul>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Что-то</a></li>
+							</ul>
+						</div>
+						<div class="uk-width-medium-1-3">
+							<ul>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Что-то</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-medium-2-10">
+					<div class="contacts">
+						<a href="tel:+88005553535"><b>+7&nbsp;(000)&nbsp;123-45-67</b></a>	
+						<a href="mailto:e-mail@example.com">e-mail@example.com</a>
+					</div>
+				</div>
+				<div class="uk-width-medium-2-10">
+					<div class="adress">
+						<p>Москва, ул. Пушкина 21, 3 этаж, офис&nbsp;41</p>						
+					</div>					
+				</div>
+				<div class="uk-width-1-1 copy">
+					<p>© 2014 - 2018 ОЭМК. Все права защищены.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!-- заказать звонок -->
+<div id="backCall" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+    	<h2 class="uk-text-center">Обратный звонок</h2>
+        <form class="form" action="">
+        	<input type="text" placeholder="Имя">
+        	<input type="text" placeholder="Телефон*" required>
+        	<textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+        	<p>* — поля обязательные для заполнения</p>
+        	<small>Нажимая на кнопку Отправить, я <a href="">даю согласие на обработку персональных данных</a></small>
+        	<button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<!-- задать вопрос -->
+<div id="askQuest" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+    	<h2 class="uk-text-center">Задать вопрос</h2>
+        <form class="form" action="">
+        	<input type="text" placeholder="Имя*" required>
+        	<input type="tel" placeholder="Телефон*" required>
+        	<input type="mail" placeholder="E-mail">
+        	<textarea name="" id="" cols="30" rows="10" placeholder="Сообщение*" required></textarea>
+        	<p>* — поля обязательные для заполнения</p>
+        	<small>Нажимая на кнопку Отправить, я <a href="">даю согласие на обработку персональных данных</a></small>
+        	<button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+	<script src="js/libs/jquery-3.3.1.min.js"></script>
+	<script src="js/libs/slick.min.js"></script>
+	<script src="js/libs/uikit.min.js"></script>
+	<script src="js/libs/accordion.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
