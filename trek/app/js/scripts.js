@@ -13,6 +13,7 @@ $(document).ready(function(){
 		    breakpoint: 960,
 		    settings: {
 		    	arrows: false
+                // fade: false
 		    }
 		   }
 		],
@@ -40,6 +41,9 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 		$('.left-sidebar ul').toggleClass('open');
 	});
+
+    // Маска поля телефон 
+    $("input[type=tel]").mask("9 (999) 999-99-99");
 
 });
 
