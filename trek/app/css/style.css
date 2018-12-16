@@ -43,6 +43,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "\e905";
+}
+
+.icon-clock:before {
+  content: "\e911";
+}
+
+.icon-location:before {
+  content: "\e910";
+}
+
 .icon-cart-wire:before {
   content: "\e907";
 }
@@ -97,10 +109,6 @@
 
 .icon-menu:before {
   content: "\e904";
-}
-
-.icon-phone:before {
-  content: "\e905";
 }
 
 .icon-right-arrow:before {
@@ -239,7 +247,42 @@ section {
 .uk-close:after {
   content: "\e900";
   font-family: icomoon;
-  font-size: 20px;
+  color: #0088cc;
+  font-weight: 700;
+}
+
+.uk-slidenav-position .uk-slidenav {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 1;
+}
+
+.uk-slidenav-position .uk-slidenav:hover {
+  text-decoration: none;
+}
+
+.uk-slidenav-previous {
+  left: 30px;
+}
+
+.uk-slidenav-previous:before {
+  content: "\e903";
+  font-family: icomoon;
+}
+
+.uk-slidenav-next {
+  right: 30px;
+}
+
+.uk-slidenav-next:before {
+  content: "\e906";
+  font-family: icomoon;
 }
 
 .header {
@@ -262,6 +305,13 @@ section {
   line-height: 26px;
   display: block;
   color: #555;
+}
+
+.header .phone .icon {
+  margin-right: 5px;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #00a3f5;
 }
 
 .header .back-call {
@@ -440,15 +490,18 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover {
 .main-slider {
   margin-top: -35px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .main-slider .block {
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   min-height: 450px;
 }
 
 .main-slider .block:before {
+  overflow: hidden;
   content: "";
   position: absolute;
   top: 0;
@@ -657,6 +710,26 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover {
   justify-content: flex-end;
 }
 
+.news-main .news-block {
+  padding: 10px 0;
+}
+
+.news-main .news-block:last-child {
+  background-color: red;
+}
+
+.news-main .news-block .title a {
+  font-size: 16px;
+}
+
+.news-main .news-block .date {
+  font-size: 12px;
+}
+
+.news-main .button {
+  margin-top: 20px;
+}
+
 .page-top {
   margin: 25px 0;
 }
@@ -751,30 +824,36 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover {
   margin-bottom: 10px;
 }
 
-.project-block {
+.project-block,
+.news-block {
   padding: 30px 0;
   border-bottom: 1px solid #d9dfe3;
 }
 
-.project-block:first-child {
+.project-block:first-child,
+.news-block:first-child {
   padding-top: 0;
 }
 
-.project-block:last-child {
+.project-block:last-child,
+.news-block:last-child {
   padding-bottom: 0;
   border-bottom: none;
 }
 
-.project-block .title {
+.project-block .title,
+.news-block .title {
   font-size: 20px;
   margin-bottom: 5px;
 }
 
-.project-block .title a:hover {
+.project-block .title a:hover,
+.news-block .title a:hover {
   text-decoration: none;
 }
 
-.project-block .date {
+.project-block .date,
+.news-block .date {
   font-size: 14px;
   color: #97a1a7;
 }
@@ -801,6 +880,15 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover {
   margin-bottom: 20px;
 }
 
+.license-block {
+  margin-bottom: 30px !important;
+}
+
+.license-block p {
+  margin-top: 5px;
+  text-align: center;
+}
+
 .staff-list {
   margin-top: 20px;
 }
@@ -812,7 +900,6 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover {
 }
 
 .staff-block .foto {
-  padding: 20px;
   margin-bottom: 15px;
   max-height: 250px;
 }
@@ -832,6 +919,37 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover {
   margin-right: 10px;
   font-size: 14px;
   vertical-align: middle;
+}
+
+.info-block .image {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+.info-block .image .icon {
+  font-size: 35px;
+  color: #0088cc;
+}
+
+.info-block .text {
+  width: 72%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info-block .title {
+  font-weight: 700;
+}
+
+.info-block p {
+  margin-top: 5px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
 }
 
 footer {

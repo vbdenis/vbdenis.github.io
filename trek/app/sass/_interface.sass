@@ -1,5 +1,8 @@
 *
 	box-sizing: border-box
+html
+	// overflow-x: hidden
+	// margin-right: calc(-1 * (100vw - 100%))
 body, ul, li, h1, h2, h3, h4, h5, h6 
 	margin: 0
 	padding: 0
@@ -31,6 +34,8 @@ img
 	max-width: 100%
 section
 	padding: 15px 0
+.content
+	// min-height: calc(100vh - 300px)
 .uk-container
 	margin: 0 auto
 .button
@@ -53,7 +58,7 @@ section
 		color: #fff
 	&-white
 		background-color: #fff
-		border-color: #cccccc;
+		border-color: #cccccc
 		color: $text 
 		box-shadow: none
 		&:hover
@@ -76,9 +81,31 @@ section
 		max-width: 300px
 	small
 		opacity: .6
-.uk-close:after 
-	content: "\e900"
-	font-family: icomoon
-	font-size: 20px
-.breadcrumb
-
+.uk-close
+	&:after 
+		content: "\e900"
+		font-family: icomoon
+		color: $blue
+		font-weight: 700
+.uk-slidenav-position .uk-slidenav
+	    position: absolute
+	    top: 50%
+	    width: 60px
+	    height: 60px
+	    margin-top: -30px
+	    font-size: 60px
+	    line-height: 60px
+	    text-align: center
+	    z-index: 1
+	    &:hover
+	    	text-decoration: none
+.uk-slidenav-previous
+	left: 30px
+	&:before
+	    content: "\e903"
+	    font-family: icomoon
+.uk-slidenav-next
+	right: 30px
+	&:before
+		content: "\e906"
+		font-family: icomoon

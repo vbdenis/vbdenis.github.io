@@ -12,13 +12,12 @@
 	<link rel="stylesheet" href="css/libs/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Каталог</title>
-</head>
-<body>
+</head><body>
 	<header class="header">
 		<div class="uk-container uk-visible-large">
 			<div class="uk-grid">
 				<div class="uk-width-medium-1-3">
-					<a href="/" class="logo">
+					<a href="main.html" class="logo">
 						<img src="img/logo-demo.jpg" alt="logo">
 					</a>
 				</div>
@@ -26,7 +25,7 @@
 					<div class="top-description">Лозунг или другие важные вещи <br>короткой строкой</div>
 				</div>
 				<div class="uk-width-medium-1-3 uk-text-right">
-					<a class="phone" href="tel:+88005553535">+7&nbsp;(000)&nbsp;123-45-67</a>
+					<a class="phone" href="tel:+88005553535"><span class="icon icon-phone"></span> +7&nbsp;(000)&nbsp;123-45-67</a>
 					<a class="back-call" href="#backCall" data-uk-modal>заказать обратный звонок</a>
 				</div>
 			</div>
@@ -34,11 +33,10 @@
 				<ul>
 					<li><a href="main.html" class="active">Главная</a></li>
 					<li>
-						<a href="/">Компания</a>
+						<a href="">Компания</a>
 						<ul class="sublist">
 							<li><a href="">О компании</a></li>
-							<li><a href="">История</a></li>
-							<li><a href="">Лицензии</a></li>
+							<li><a href="licenses.html">Лицензии</a></li>
 							<li><a href="">Реквизиты</a></li>
 							<li><a href="staff.html">Сотрудники</a></li>
 						</ul>
@@ -62,15 +60,15 @@
 						</ul>
 					</li>
 					<li><a href="projects.html">Проекты</a></li>
-					<li><a href="">Новости</a></li>
-					<li><a href="">Контакты</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="uk-container uk-hidden-large mobile-header">
 			<div class="uk-grid">
 				<div class="uk-width-1-2">
-					<a href="/" class="logo">
+					<a href="main.html" class="logo">
 						<img src="img/logo-demo.jpg" alt="logo">
 					</a>
 				</div>
@@ -91,8 +89,7 @@
 								<a href="#">Компания</a>
 								<ul class="uk-nav-sub">
 									<li><a href="">О компании</a></li>
-									<li><a href="">История</a></li>
-									<li><a href="">Лицензии</a></li>
+									<li><a href="licenses.html">Лицензии</a></li>
 									<li><a href="">Реквизиты</a></li>
 									<li><a href="staff.html">Сотрудники</a></li>
 								</ul>
@@ -116,16 +113,14 @@
 								</ul>
 							</li>							
 							<li><a href="projects.html">Проекты</a></li>
-							<li><a href="">Новости</a></li>
-							<li><a href="">Контакты</a></li>
+							<li><a href="news.html">Новости</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
 			    		</ul>
 			    	</div>
 			    </div>
 			</div>
 		</div>
-	</header>
-
-	<div class="uk-container">
+	</header>	<div class="uk-container">
 		<div class="page-top">
 			<h1>Каталог</h1>
 			<ul class="uk-breadcrumb">
@@ -188,7 +183,6 @@
 			</div>
 		</div>
 	</div>
-
 	<footer class="footer">
 		<div class="uk-container">
 			<div class="uk-grid">
@@ -233,8 +227,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
-<!-- заказать звонок -->
+	</footer><!-- заказать звонок -->
 <div id="backCall" class="uk-modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
@@ -264,11 +257,12 @@
         	<button class="button" type="submit">Отправить</button>
         </form>
     </div>
-</div>
-	<script src="js/libs/jquery-3.3.1.min.js"></script>
+</div>	<script src="js/libs/jquery-3.3.1.min.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/libs/uikit.min.js"></script>
 	<script src="js/libs/accordion.min.js"></script>
+	<script src="js/libs/lightbox.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
