@@ -1,0 +1,442 @@
+// fonts
+@import "fonts"
+
+// reset
+*
+	box-sizing: border-box
+html, body, ul, li, h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	padding: 0
+
+// interface
+a
+	text-decoration: none
+p
+	margin-bottom: 50px
+img
+	max-width: 100%
+body
+	font-family: "Myriad Pro", sans-serif
+	font-size: 40px
+	font-weight: 400
+	color: #fff
+section
+	overflow: hidden
+.section-title
+	margin-bottom: 60px
+.container
+	position: relative
+	max-width: 1730px
+	padding-left: 15px
+	padding-right: 15px
+	margin: auto
+.button
+	padding: 34px 26px 30px
+	color: #ffffff
+	font-family: "Myriad Pro", sans-serif
+	font-size: 40px
+	font-weight: 700
+	text-transform: uppercase
+	border: 5px solid #ffffff
+	background-color: transparent
+	line-height: normal
+	transition: .3s ease
+	cursor: pointer
+	&:hover
+		border: 5px solid #4990cf
+		color: #4990cf
+.button--blue
+	border: 5px solid #4990cf
+	color: #4990cf
+	&:hover
+		border: 5px solid #fff
+		color: #fff
+.upper-txt
+	font-family: 'Intro', sans-serif
+	font-size: 60px
+	font-weight: 700
+	line-height: 85px
+	&--black
+		color: #555555
+	&--blue
+		color: #368fe4 
+	&--center
+		text-align: center
+
+
+// header
+.header
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 20px 45px
+	background-color: #2d2d2d
+	align-items: center
+.menu-button
+	position: relative
+	display: none
+	width: 30px
+	height: 30px
+	text-align: center
+	transition: all .3s ease
+	span
+		position: absolute
+		display: block
+		top: 50%
+		left: 0
+		width: 30px
+		height: 3px
+		border-radius: 2px
+		background-color: #fff
+		transform: translateY(-50%)
+		transition: all .3s ease
+		&:before, &:after
+			content: ''
+			display: block
+			position: absolute
+			background-color: #fff
+			top: -11px
+			width: 30px
+			height: 3px
+			transition: all .3s ease
+			border-radius: 2px
+		&:after
+			top: auto
+			bottom: -11px
+	&.open
+		span
+			background-color: transparent
+			&:before
+				transform: rotate(45deg)
+				top: 0
+			&:after
+				transform: rotate(-45deg)
+				bottom: 0
+
+.nav
+	&__list
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		list-style-type: none
+	&__item
+		margin-right: 42px
+		&:last-child
+			margin-right: 0
+	&__link
+		position: relative
+		font-family: "HelveticaNeueCyr", sans-serif
+		font-size: 20px
+		font-weight: 400
+		color: #aea9a9
+		transition: .3s ease
+		&:after
+			content: ""
+			position: absolute
+			bottom: -5px
+			left: 0
+			height: 1px
+			width: 0
+			background-color: #fff
+			transition: .3s ease
+		&:hover
+			color: #ffffff
+			&:after
+				width: 100%
+.mobile-nav
+	flex-basis: 100%
+	max-height: 0px
+	overflow: hidden
+	border-top: 1px solid transparent
+	transition: .3s ease
+	&__list
+		margin-left: 0
+		list-style-type: none
+	&__link
+		position: relative
+		font-family: "HelveticaNeueCyr", sans-serif
+		font-size: 20px
+		font-weight: 400
+		color: #aea9a9
+		transition: .3s ease
+	&.open
+		max-height: 155px
+		overflow: visible
+		border-top: 1px solid #aea9a9
+
+
+.btn-block
+	&__link
+		margin-right: 45px
+		&:last-child
+			margin-right: 0
+	&__icon
+		transition: transform .3s ease
+		&:hover
+			transform: scale3d(1.09, 1.09, 1.09)
+
+// hero section
+.hero-section
+	background: #fff url('../img/hero-bg.jpg') center no-repeat
+	background-size: cover
+	padding-top: 120px
+	padding-bottom: 140px
+	.wrap
+		position: relative
+		// min-height: 100vh
+		min-height: 1140px
+	&__text
+		position: absolute
+		top: 25%
+		right: 0
+		text-align: right
+		z-index: 2
+		p:nth-child(1)
+			margin-bottom: 80px
+		p:nth-child(2)
+			margin-bottom: 60px
+
+.hashtag
+	position: absolute
+	top: 50%
+	left: 0
+	transform: translateY(-50%)
+	z-index: 1
+	&__img
+		// margin-bottom: 24px
+	&__season
+		display: inline-block
+		position: relative
+		font-family: 'Intro'
+		font-size: 60px
+		text-transform: uppercase
+		text-align: center
+		margin-left: 20%
+		margin-bottom: 44px
+		&:before, &:after
+			content: ""
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			height: 4px
+			width: 27px
+			background-color: #fff
+		&:before 
+			left: -40px
+		&:after
+			right: -40px
+	&__start
+		position: relative
+		width: 296px
+		height: 296px
+		border-radius: 50%
+		background-color: #ffffff
+		margin-left: 20%
+		span
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 100%
+			transform: translate(-50%, -50%) rotate(-9deg)
+			text-align: center
+			display: block
+			color: #1e1c49
+			font-family: Intro
+			font-size: 55px
+			font-weight: 400
+			line-height: 47.75px
+.girl
+	width: 100%
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 0
+	transition: .3s ease
+	&__img
+		max-height: 100%
+		display: block
+		margin: auto
+
+// timer-section
+.timer-section
+	padding-top: 178px
+	padding-bottom: 167px
+	background: #1f1f1f url('../img/timer-bg.png') center right no-repeat
+	&__text
+		font-family: Intro
+		font-size: 60px
+		font-weight: 700
+		line-height: 85px
+		letter-spacing: -1.5px
+// timer
+.timer 
+	font-family: "Helvetica Neue"
+	&__wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	&__item
+		display: inline-block
+		position: relative
+		padding-right: 130px
+		&:last-child
+			padding-right: 0
+	&__numeral
+		display: block
+		font-family: "HelveticaNeueCyr"
+		font-size: 102px
+		font-weight: 700
+		text-align: center
+	&__text
+		display: block
+		opacity: 0.22
+		text-align: center
+		font-family: "Myriad Pro"
+		font-size: 41px
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: 1.2px
+	&__separator
+		position: absolute
+		top: 25px
+		right: 45px
+		div
+			width: 18px
+			height: 18px
+			border-radius: 50%
+			border: 1px solid #fff
+			margin-bottom: 27px
+			&:last-child
+				margin-bottom: 0
+			&.animation-blink
+				animation: separator-blink 1s infinite ease-in
+				animation-direction: alternate
+@keyframes separator-blink 
+	from
+		opacity: 1
+	to
+		opacity: 0
+
+// diet-section
+.diet-section
+	padding: 112px 0 124px
+	background: #e8e8e8 url('../img/diet-bg.png') center right no-repeat
+	background-size: contain
+	&__text
+		color: #555
+		max-width: 675px
+		margin-left: 60px
+
+// advantages-section
+.advantages-section
+	padding: 227px 0 138px
+	background: #fff url('../img/advantages-bg.jpg') center no-repeat
+	background-size: cover
+.advantage
+	transition: .3s ease
+	&--shtick
+		background: transparent url('../img/advantage-1.png') center left no-repeat
+		background-size: contain
+		min-height: 875px
+		.advantage__text
+			margin-left: 50%
+			position: relative
+			max-width: 870px
+	&--live
+		background: transparent url('../img/advantage-2.png') center right no-repeat
+		background-size: contain
+		min-height: 908px
+		margin-top: -250px
+		.advantage__text
+			margin-left: 8.5%
+			margin-right: 50%
+			padding-top: 400px
+	&--week
+		background: transparent url('../img/advantage-3.png') center left no-repeat
+		background-size: contain
+		margin-top: 210px
+		.advantage__text
+			margin-left: 50%
+			padding-top: 70px
+			position: relative
+			max-width: 870px
+
+// categories-section
+.categories-section
+	padding-top: 134px
+	padding-bottom: 230px
+	background: #fff url('../img/category-bg.jpg') center no-repeat
+	background-size: cover
+
+.categories-list
+	display: flex
+	justify-content: space-between	
+	max-width: 80%
+	margin: 200px auto 0
+.category-block
+	flex: 1
+	flex-basis: 0
+	text-align: center
+	font-size: 40px
+	&__img
+		margin-bottom: 40px
+	&__title
+		text-transform: uppercase
+		font-family: "Myriad Pro"
+		margin-bottom: 50px
+// winner-section
+.winner-section
+	padding-top: 136px
+	padding-bottom: 74px
+	background: #ffffff url('../img/winner-bg.jpg') center no-repeat
+	background-size: cover
+	&__cup
+		position: absolute
+		left: 30%
+		z-index: 0
+		transition: .3s ease
+	&__text
+		position: relative
+		z-index: 1
+		margin-left: 55%
+	&__freedom-logo
+		margin-top: 370px
+.footer
+	padding-top: 70px
+	padding-bottom: 88px
+	background-color: #3b3b3b
+	text-align: center
+	font-family: "HelveticaNeueCyr", sans-serif
+	font-size: 20px
+	letter-spacing: -0.1px
+	line-height: normal
+	&__title
+		font-size: 20px
+		font-weight: 400
+		line-height: normal
+		margin-bottom: 0	
+	&__link
+		color: #ffffff
+		display: block
+	&__company
+		margin-top: 59px
+		font-size: 20px
+		font-weight: 400
+		line-height: normal
+		margin-bottom: 0	
+
+
+
+
+
+@import "media"
