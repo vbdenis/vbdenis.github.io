@@ -61,5 +61,12 @@ $(document).ready(function(){
           $('.parall').css({'top': (100+(counter*15))+'px'});
           $('.bg-parall').css({'background-position-y': (0+(counter*10))+'px'});
         }
-    });  
+    });
+
+
+
+
+
+
+  
 });
