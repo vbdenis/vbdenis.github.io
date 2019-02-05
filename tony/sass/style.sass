@@ -1,0 +1,208 @@
+@font-face 
+	font-family: 'Open Sans'
+	src: url('../fonts/OpenSans-SemiBold.eot')
+	src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+	url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+	url('../fonts/OpenSans-SemiBold.ttf') format('truetype'),
+	url('../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg')
+	font-weight: 600
+	font-style: normal
+
+@font-face 
+	font-family: 'Open Sans'
+	src: url('../fonts/OpenSans-Regular.eot')
+	src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+	url('../fonts/OpenSans-Regular.woff') format('woff'),
+	url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+	url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg')
+	font-weight: 400
+	font-style: normal
+
+*
+	box-sizing: border-box
+
+body, ul, h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	padding: 0
+img
+	max-width: 100%
+body
+	font-family: 'Open Sans', sans-serif
+	font-size: 18px
+	line-height: 24px
+	font-weight: 400
+	color: #000
+p
+	margin-bottom: 20px
+
+	
+header
+	display: flex 
+	background: #00bcc6 
+	height: 150px 
+	justify-content: center 
+	color: white
+
+footer
+	display: flex 
+	background: #00bcc6 
+	height: 150px 
+	justify-content: center
+	color: white
+.button
+	padding: 9px 20px
+	border: 1px solid transparent
+	color: #000
+	background-color: #ecff31
+	font-size: 21px
+	font-weight: 400
+	text-transform: uppercase
+	cursor: pointer
+	transition: all 0.3s ease
+	border-radius: 8px
+	&:hover
+		background-color: darken(#ecff31, 13)
+		transition: all 0.3s ease
+
+.container	
+	margin: 0 auto 
+	max-width: 980px 
+	padding: 0 15px 
+.courses-section
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.course-block
+	display: block
+	text-decoration: none
+	position: relative
+	flex-basis: 33.33%
+	color: #fff
+	background-position: center
+	background-size: cover
+	&:before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(#212526, 0.8)
+		transition: all 0.3s ease
+	&:hover:before
+		background-color: rgba(#3d5857, 0.7)
+	&__content
+		position: relative
+		z-index: 1
+		margin: 58px 29px 36px
+	&__title
+		position: relative
+		font-size: 24px
+		font-weight: 600
+		line-height: 27px
+		padding-bottom: 18px
+		margin-bottom: 13px
+		&:after
+			position: absolute
+			content: ""
+			bottom: 0px
+			left: 0
+			width: 85px
+			height: 2px
+			background-color: #72bdbe
+			transition: all 0.3s ease
+	&__descr
+		color: #f0eb65
+		font-size: 14px
+.course-block:hover .course-block__title:after
+	width: 120px
+.tony-section
+	padding: 30px 0
+	background-image: linear-gradient(45deg, #353c62 0%, #66cccc 51%, #ffffff 68%, #ffffff 100%)
+	&__content
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+	&__img
+		flex-basis: 33.33%
+		margin-right: 33px
+	&__text
+		flex-basis: 63%
+.detail-section
+	font-size: 12px
+	line-height: 26px
+	&__content
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		padding: 20px 0
+		background-color: #eeeded
+	&__descr
+		flex-basis: 45%
+		padding: 0px 30px
+	&__table
+		width: 55%
+.descr-block
+	&__title
+		position: relative
+		padding-bottom: 11px
+		margin-bottom: 11px
+		&:after
+			position: absolute
+			content: ""
+			bottom: 0px
+			left: 0
+			width: 85px
+			height: 2px
+			background-color: #72bdbe
+	&__text
+		color: #72bdbe
+
+.table-striped
+	width: 100%
+	border-collapse: collapse
+	&__row
+		&:nth-child(even)
+			background-color: #dbe6e3
+	&__cell
+		padding-left: 15px
+
+.section-button
+	text-align: center
+.button--section-button 
+	width: 100%
+	max-width: 455px
+	margin-top: 20px
+	margin-bottom: 50px
+
+
+@media (max-width: 767px)
+	.courses-section
+	 	flex-direction: column
+	.course-block
+		flex-basis: 100%
+		&__title
+			br
+				display: none
+	.tony-section__content
+		flex-direction: column
+	.tony-section__img
+		margin-right: 0
+		margin-bottom: 20px
+	.detail-section__content
+		flex-direction: column
+	.detail-section__descr
+		flex-basis: 100%
+		margin-bottom: 20px
+		padding: 0px 15px
+	.detail-section__table
+		width: 100%
