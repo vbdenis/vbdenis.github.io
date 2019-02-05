@@ -206,7 +206,7 @@ footer {
 
 .detail-section {
   font-size: 12px;
-  line-height: 26px;
+  line-height: normal;
 }
 
 .detail-section__content {
@@ -260,6 +260,8 @@ footer {
 }
 
 .table-striped__cell {
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 15px;
 }
 
