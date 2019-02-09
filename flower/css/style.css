@@ -788,6 +788,11 @@ img {
     letter-spacing: normal;
     padding: 14px 12px;
   }
+
+  .footer-phone {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 600px) {
