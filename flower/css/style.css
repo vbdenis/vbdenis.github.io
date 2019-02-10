@@ -692,13 +692,13 @@ img {
   .blue-block__text {
     display: block;
     background: none;
+    text-decoration: none;
   }
 
   .main__right {
     padding: 0;
     text-align: center;
-    background-position: center;
-    background-size: contain;
+    background: none;
   }
 
   .pink-block {
