@@ -726,7 +726,8 @@ img {
   .head-section__content {
     padding-left: 0;
     text-align: center;
-    background-position: bottom right;
+    background-position: bottom left;
+    background-image: url("../img/head-bg-no-butterfly.png");
   }
 
   h1 {
