@@ -1,0 +1,156 @@
+<!-- Обратный звонок -->
+<div id="backCall" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Обратный звонок</div>
+		<div class="modal__content">
+			<form action="" class="modal__form">
+				<div class="modal__row">
+					<div class="modal__row-title">Как к вам обращаться?</div>
+					<input type="text" class="modal__row-input">
+				</div>
+				<div class="modal__row">
+					<div class="modal__row-title">Номер телефона для связи</div>
+					<input type="tel" class="modal__row-input">
+				</div>
+				<div class="modal__btns">
+					<button class="button button--red" type="submit">отправить</button>					
+				</div>
+			</form>
+		</div>
+    </div>
+</div>
+
+
+<!-- Рассчитать свой проект -->
+<div id="calcProject" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Расчитать свой проект</div>
+		<div class="modal__content">
+			<div class="modal__content">
+				<form action="" class="modal__form">
+					<div class="modal__row">
+						<div class="modal__row-title">Как к вам обращаться?</div>
+						<input type="text" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Ваш email</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Номер телефона для связи</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row modal__row--upload">
+						<input type="file" multiple id="input_down">
+						<label for="input_down"><span class="icon icon-upload"></span> Загрузить файлы</label>
+					</div>
+					<div class="modal__btns">
+						<button class="button">Отмена</button>					
+						<button class="button button--red" type="submit">отправить</button>				
+					</div>
+				</form>
+
+				<!-- При успешной отправке формы  скрывать форму и показывать блок ниже-->
+				<div id="thx-modal" style="display: none">
+					<div class="modal__title">Спасибо</div>
+					<p>Ваш эскиз отправлен, менеджер свяжется с вами в ближайшее время</p>
+					<div class="modal__btns">
+						<button class="button button--red">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- Форма с детальной станицы проекта, при клике на кнопку ЗАКАЗАТЬ -->
+<div id="toOrder" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Заявка на расчет проекта: ДБ 35 ПРОЕКТ ДОМА ИЗ БРУСА 8X10</div>
+		<div class="modal__content">
+			<div class="modal__content">
+				<form action="" class="modal__form" id="form-submit">
+					<div class="modal__row">
+						<div class="modal__row-title">Как к вам обращаться?</div>
+						<input type="text" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Ваш email</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Номер телефона для связи</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row modal__row--upload">
+						<input type="file" multiple id="input_down">
+						<label for="input_down"><span class="icon icon-upload"></span> Загрузить файлы</label>
+					</div>
+					<div class="modal__btns">
+						<button class="button">Отмена</button>					
+						<button class="button button--red" type="submit">отправить</button>					
+					</div>
+				</form>
+
+				<!-- При успешной отправке формы  скрывать форму и показывать блок ниже-->
+				<div id="thx-modal" style="display: none">
+					<div class="modal__title">Спасибо</div>
+					<p>Ваш эскиз отправлен, менеджер свяжется с вами в ближайшее время</p>
+					<div class="modal__btns">
+						<button class="button button--red">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- Задать вопрос спецу -->
+
+<div id="askQuestion" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Задать вопрос специалисту</div>
+		<div class="modal__content">
+				<form action="" class="form">
+					<div class="form__row">
+						<div class="form__title">Ваше сообщение</div>
+						<textarea name="" id="" cols="30" rows="10" class="form__textarea" ></textarea>
+					</div>
+					<div class="form__row">
+						<div class="form__title">Как к вам обращаться?</div>
+						<input type="text" class="form__input">
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-medium-1-2">
+							<div class="form__row">
+								<div class="form__title">Ваш email</div>
+								<input type="email" class="form__input">
+							</div>
+						</div>
+						<div class="uk-width-medium-1-2">
+							<div class="form__row">
+								<div class="form__title">Номер телефона</div>
+								<input type="tel" class="form__input">
+							</div>
+						</div>
+					</div>
+					<div class="form__row form__btns uk-text-right">
+						<button class="button button--green" type="submit">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+
+				<!-- При успешной отправке формы  скрывать форму и показывать блок ниже-->
+				<div id="thx-modal" style="display: none">
+					<div class="modal__title">Спасибо</div>
+					<p>Ваш эскиз отправлен, менеджер свяжется с вами в ближайшее время</p>
+					<div class="modal__btns">
+						<button class="button button--red">Закрыть</button>
+					</div>
+				</div>
+		</div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Bold.eot');
+	src: url('../fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
+		url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular.eot');
+	src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+		url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Medium.eot');
+	src: url('../fonts/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+		url('../fonts/Roboto/Roboto-Medium.woff') format('woff'),
+		url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?9fysra');
+  src:  url('../fonts/icomoon/icomoon.eot?9fysra#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon/icomoon.ttf?9fysra') format('truetype'),
+	url('../fonts/icomoon/icomoon.woff?9fysra') format('woff'),
+	url('../fonts/icomoon/icomoon.svg?9fysra#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow-up:before {
+  content: "\e912";
+}
+.icon-arrow-down:before {
+  content: "\e911";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-burger:before {
+  content: "\e902";
+  color: #757575;
+}
+.icon-camera:before {
+  content: "\e903";
+}
+.icon-cellphone-android:before {
+  content: "\e904";
+}
+.icon-close:before {
+  content: "\e905";
+}
+.icon-comment:before {
+  content: "\e906";
+}
+.icon-download:before {
+  content: "\e907";
+}
+.icon-eye:before {
+  content: "\e908";
+}
+.icon-heart:before {
+  content: "\e909";
+}
+.icon-letter:before {
+  content: "\e90a";
+}
+.icon-like:before {
+  content: "\e90b";
+}
+.icon-message-video:before {
+  content: "\e90c";
+}
+.icon-play:before {
+  content: "\e90d";
+}
+.icon-question:before {
+  content: "\e90e";
+}
+.icon-star:before {
+  content: "\e90f";
+}
+.icon-upload:before {
+  content: "\e910";
+}

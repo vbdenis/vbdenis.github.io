@@ -1,0 +1,464 @@
+{% extends "layouts/default.html" %}
+{% set title="Проекты домов из бруса" %}
+{% block content %}
+
+<section class="section section-filter section-filter--inner">
+	<div class="uk-container uk-container--small">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+				<li class="breadcrumbs__item"><span href="" class="breadcrumbs__link">Проекты домов из бруса</span></li>
+			</ul>
+		</div> 
+		<div class="section-filter__content">
+			<h1 class="section__title">Проекты домов из бруса</h1>
+			<div class="filter">
+				<form action="" class="filter__form">					
+					<div class="filter__row">					
+						<div class="filter__block">
+							<div class="filter__block-title">Крыша</div>
+							<select name="" id="" class="select filter__select js-select2">
+								<option value="" class="select__option">Любая</option>
+								<option value="" class="select__option">Двускатная</option>
+								<option value="" class="select__option">Ломанная</option>
+								<option value="" class="select__option">Вальмовая</option>
+							</select>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Этажность</div>
+							<select name="" id="" class="select filter__select js-select2">
+								<option value="" class="select__option">Любая</option>
+								<option value="" class="select__option">Двускатная</option>
+								<option value="" class="select__option">Ломанная</option>
+								<option value="" class="select__option">Вальмовая</option>
+							</select>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Размер дома</div>
+							<select name="" id="" class="select filter__select js-select2">
+								<option value="" class="select__option">Любой</option>
+								<option value="" class="select__option">Двускатная</option>
+								<option value="" class="select__option">Ломанная</option>
+								<option value="" class="select__option">Вальмовая</option>
+							</select>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Размер дома</div>
+							<div class="checkbox filter__checkbox">
+								<input type="checkbox" class="checkbox__input" id="c1">
+								<label for="c1" class="checkbox__label">Терасса</label>
+							</div>
+							<div class="checkbox filter__checkbox">
+								<input type="checkbox" class="checkbox__input" id="c2">
+								<label for="c2" class="checkbox__label">Балкон</label>
+							</div>
+							<div class="checkbox filter__checkbox">
+								<input type="checkbox" class="checkbox__input" id="c3">
+								<label for="c3" class="checkbox__label">Эркер</label>
+							</div>
+						</div>
+					</div><!-- filter__row -->	
+
+					<div class="filter__row">
+						<div class="filter__block">
+							<div class="filter__block-title">Площадь, м2</div>
+							<div class="range">
+								<div class="range__value-wrap">
+									<div class="range__value">
+										От <input type="number" class="range__input">
+									</div>
+									<div class="range__value">
+										до <input type="number" class="range__input">
+									</div>
+								</div>
+								<div class="range__slider-wrap">
+									<div class="range__slider" id="range__slider1"></div>
+								</div>				
+							</div>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Стоимость, руб</div>
+							<div class="range">
+								<div class="range__value-wrap">
+									<div class="range__value">
+										От <input type="number" class="range__input">
+									</div>
+									<div class="range__value">
+										до <input type="number" class="range__input">
+									</div>
+								</div>
+								<div class="range__slider-wrap">
+									<div class="range__slider" id="range__slider2"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter__block">
+							<a href="#calcProject" class="button button--calc" data-uk-modal>Расчитать свой проект</a>
+						</div>
+					</div><!-- filter__row -->	
+
+					<div class="filter__row">
+						<div class="filter__buttons">
+							<button class="button button--red filter__button" type="reset">сбросить</button>
+							<button class="button button--green filter__button" type="submit">подобрать</button>
+						</div>
+					</div><!-- filter__row -->	
+
+				</form><!-- filter__form -->						
+			</div><!-- filter -->
+
+		</div><!-- section-filter__content -->		
+	</div><!-- uk-container uk-container--small -->	
+</section>
+
+<div class="page-content">
+	<div class="uk-container uk-container--small">
+		
+		<section class="section section__catalog-list">
+			<div class="uk-grid">
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="card">
+						<div class="card__image-wrap">
+							<img class="card__image" src="img/pic-home/home-1.jpg" alt="" >
+							<div class="card__label-top">111 м2</div>
+							<div class="card__label-bottom">390 000 руб</div>
+						</div>
+						<div class="card__descr">
+							ДБ 24 Проект дома из бруса 6x12
+							<div class="card__btn">
+								<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<ul class="uk-pagination pagination">
+			<li class="uk-pagination-previous pagination__item--prev"><a href=""><span class="icon icon-arrow-left"></span></a></li>
+		    <li class="pagination__item uk-active"><a class="pagination__link" href="">1</a></li>
+		    <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
+		    <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+		    <li class="pagination__item"><a class="pagination__link" href="">4</a></li>
+		    <li class="pagination__item"><a class="pagination__link" href="">5</a></li>
+		    <li class="uk-pagination-next pagination__item--next"><a href=""><span class="icon icon-arrow-right"></span></a></li>
+		</ul>
+
+	</div><!-- uk-container uk-container--small -->
+
+		<hr>
+
+		<div class="uk-container uk-container--small">
+			<h2>Деревянные бани из бруса</h2>
+			<p>Мечтаете о своем собственном жилье? Красивый и теплый дом из бруса – это идеальный вариант уютного гнездышка, которым можно обзавестись в весьма сжатые сроки. Уникальные свойства натуральной древесины наполняют дом невероятной атмосферой уюта. Зимой в таком доме тепло, а летом прохладно. Компания «ДревЦентр» предлагает своим клиентам лучшие дома из бруса. Высокое качество обусловлено сочетанием древнейших строительных и архитектурных традиций русских мастеров с передовыми технологиями. Это позволяет нам создавать красивые, теплые, надежные и долговечные деревянные дома из бруса. Если вам нужен жилой дом из бруса, мы с радостью предоставим вашему вниманию самые интересные проекты построек. У нас вы найдете элитный дом из бруса с мансардой или более скромные постройки эконом класса.</p>
+		</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

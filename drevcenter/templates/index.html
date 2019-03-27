@@ -1,0 +1,512 @@
+{% extends "layouts/default.html" %}
+{% set title="Главная" %}
+{% block content %}
+
+<section class="section main-section">
+	<div class="slider main-slider">
+		<div class="main-slider__block">
+			<img src="img/main-slider-3.jpg" alt="" class="main-slider__image">
+			<div class="main-slider__content">
+				<div class="main-slider__text">
+					<span class="main-slider__words">твой дом — </span><br>
+					<span class="main-slider__words">твоя крепость</span>
+				</div>
+			</div>
+		</div>
+		<div class="main-slider__block">
+			<img src="img/main-slider-3.jpg" alt="" class="main-slider__image">
+			<div class="main-slider__content">
+				<div class="main-slider__text">
+					<span class="main-slider__words">твой дом — </span><br>
+					<span class="main-slider__words">твоя крепость</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- main-section -->
+
+<section class="section section-filter">
+	<div class="uk-container uk-container--small">
+		<div class="section-filter__content">
+			<h2 class="section__title">Подобрать проект по заданным параметрам</h2>
+			<div class="filter">
+				<form action="" class="filter__form">					
+					<div class="filter__row">					
+						<div class="filter__block">
+							<div class="filter__block-title">Крыша</div>
+							<select name="" id="" class="select filter__select js-select2">
+								<option value="" class="select__option">Любая</option>
+								<option value="" class="select__option">Двускатная</option>
+								<option value="" class="select__option">Ломанная</option>
+								<option value="" class="select__option">Вальмовая</option>
+							</select>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Этажность</div>
+							<select name="" id="" class="select filter__select js-select2">
+								<option value="" class="select__option">Любая</option>
+								<option value="" class="select__option">Двускатная</option>
+								<option value="" class="select__option">Ломанная</option>
+								<option value="" class="select__option">Вальмовая</option>
+							</select>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Размер дома</div>
+							<select name="" id="" class="select filter__select js-select2">
+								<option value="" class="select__option">Любой</option>
+								<option value="" class="select__option">Двускатная</option>
+								<option value="" class="select__option">Ломанная</option>
+								<option value="" class="select__option">Вальмовая</option>
+							</select>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Размер дома</div>
+							<div class="checkbox filter__checkbox">
+								<input type="checkbox" class="checkbox__input" id="c1">
+								<label for="c1" class="checkbox__label">Терасса</label>
+							</div>
+							<div class="checkbox filter__checkbox">
+								<input type="checkbox" class="checkbox__input" id="c2">
+								<label for="c2" class="checkbox__label">Балкон</label>
+							</div>
+							<div class="checkbox filter__checkbox">
+								<input type="checkbox" class="checkbox__input" id="c3">
+								<label for="c3" class="checkbox__label">Эркер</label>
+							</div>
+						</div>
+					</div><!-- filter__row -->	
+
+					<div class="filter__row">
+						<div class="filter__block">
+							<div class="filter__block-title">Площадь, м2</div>
+							<div class="range">
+								<div class="range__value-wrap">
+									<div class="range__value">
+										От <input type="number" class="range__input">
+									</div>
+									<div class="range__value">
+										до <input type="number" class="range__input">
+									</div>
+								</div>
+								<div class="range__slider-wrap">
+									<div class="range__slider" id="range__slider1"></div>
+								</div>				
+							</div>
+						</div>
+
+						<div class="filter__block">
+							<div class="filter__block-title">Стоимость, руб</div>
+							<div class="range">
+								<div class="range__value-wrap">
+									<div class="range__value">
+										От <input type="number" class="range__input">
+									</div>
+									<div class="range__value">
+										до <input type="number" class="range__input">
+									</div>
+								</div>
+								<div class="range__slider-wrap">
+									<div class="range__slider" id="range__slider2"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter__block">
+							<a href="#calcProject" class="button button--calc" data-uk-modal>Расчитать свой проект</a>
+						</div>
+					</div><!-- filter__row -->	
+
+					<div class="filter__row">
+						<div class="filter__buttons">
+							<button class="button button--red filter__button" type="reset">сбросить</button>
+							<button class="button button--green filter__button" type="submit">подобрать</button>
+						</div>
+					</div><!-- filter__row -->	
+
+				</form><!-- filter__form -->						
+			</div><!-- filter -->
+
+		</div><!-- section-filter__content -->		
+	</div><!-- uk-container uk-container--small -->	
+</section>
+
+<section class="section tabs-section">
+	<div class="tabs-menu">
+		<div class="uk-container uk-container--small">
+			<!-- <div class="uk-tab-center"> -->
+				<ul class="uk-tab tabs-menu__list" data-uk-tab="{connect:'#tabs-id', animation: 'fade', swiping: false}">
+				    <li class="uk-active tabs-menu__item"><a class="tabs-menu__link" href="" id="tabs-menu__link-1"><span class="icon icon-like tabs-menu__icon"></span><span class="tabs-menu__text">Лучшие<br> проекты</span></a></li>
+				    <li class="tabs-menu__item"><a class="tabs-menu__link" href="" id="tabs-menu__link-2"><span class="icon icon-camera tabs-menu__icon"></span><span class="tabs-menu__text">ЛУЧШИЕ<br> фотоотчеты</span></a></li>
+				    <li class="tabs-menu__item"><a class="tabs-menu__link" href="" id="tabs-menu__link-3"><span class="icon icon-message-video tabs-menu__icon"></span><span class="tabs-menu__text">ЛУЧШИЕ<br> Видео-отзывы</span></a></li>
+				</ul>
+			<!-- </div> -->
+		</div><!-- uk-container uk-container--small -->	
+	</div><!-- tabs-menu -->
+
+	<div class="tabs-content">
+		<div class="uk-container uk-container--small">
+			<ul id="tabs-id" class="uk-switcher tabs-content__list">
+			    <li class="tabs-content__item">
+			    	<div class="slider project-slider">
+			    		<div class="project-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/pic-home/home-1.jpg" alt="" >
+			    					<div class="card__label-top">111 м2</div>
+			    					<div class="card__label-bottom">390 000 руб</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					ДБ 24 Проект дома из бруса 6x12
+			    					<div class="card__btn">
+			    						<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="project-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/pic-home/home-1.jpg" alt="" >
+			    					<div class="card__label-top">111 м2</div>
+			    					<div class="card__label-bottom">390 000 руб</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					ДБ 24 Проект дома из бруса 6x12
+			    					<div class="card__btn">
+			    						<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="project-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/pic-home/home-1.jpg" alt="" >
+			    					<div class="card__label-top">111 м2</div>
+			    					<div class="card__label-bottom">390 000 руб</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					ДБ 24 Проект дома из бруса 6x12
+			    					<div class="card__btn">
+			    						<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="project-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/pic-home/home-1.jpg" alt="" >
+			    					<div class="card__label-top">111 м2</div>
+			    					<div class="card__label-bottom">390 000 руб</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					ДБ 24 Проект дома из бруса 6x12
+			    					<div class="card__btn">
+			    						<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="project-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/pic-home/home-1.jpg" alt="" >
+			    					<div class="card__label-top">111 м2</div>
+			    					<div class="card__label-bottom">390 000 руб</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					ДБ 24 Проект дома из бруса 6x12 
+			    					<div class="card__btn">
+			    						<a href="project-detail.html" class="button button--green">СМОТРЕТЬ</a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div><!-- slider project-slider -->
+			    </li><!-- tabs-content__item -->
+
+			    <li class="tabs-content__item">
+			    	<div class="slider foto-slider">
+			    		<div class="foto-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№203</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Строительство дома из бруса размером 9х9 м. в 
+			    					<div class="card__btn">
+			    						<a href="foto-report-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="foto-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№203</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Строительство дома из бруса размером 9х9 м. в 
+			    					<div class="card__btn">
+			    						<a href="foto-report-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="foto-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№203</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Строительство дома из бруса размером 9х9 м. в 
+			    					<div class="card__btn">
+			    						<a href="foto-report-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="foto-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№203</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Строительство дома из бруса размером 9х9 м. в 
+			    					<div class="card__btn">
+			    						<a href="foto-report-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="foto-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№203</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Строительство дома из бруса размером 9х9 м. в  
+			    					<div class="card__btn">
+			    						<a href="foto-report-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div><!-- slider foto-slider -->
+			    </li><!-- tabs-content__item -->
+			    <li class="tabs-content__item">
+			    	<div class="slider video-slider">
+			    		<div class="video-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/video-home/video-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№21</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Отзыв заказчика о компании "Древцентр" 
+			    					<div class="card__btn">
+			    						<a href="video-rewiew-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-play button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="video-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/video-home/video-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№21</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Отзыв заказчика о компании "Древцентр" 
+			    					<div class="card__btn">
+			    						<a href="video-rewiew-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-play button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="video-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/video-home/video-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№21</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Отзыв заказчика о компании "Древцентр" 
+			    					<div class="card__btn">
+			    						<a href="video-rewiew-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-play button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="video-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/video-home/video-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№21</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Отзыв заказчика о компании "Древцентр" 
+			    					<div class="card__btn">
+			    						<a href="video-rewiew-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-play button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="video-slider__block">
+			    			<div class="card">
+			    				<div class="card__image-wrap">
+			    					<img class="card__image" data-lazy="img/video-home/video-home-1.jpg" alt="" >
+			    					<div class="card__label-bottom">№21</div>
+			    				</div>
+			    				<div class="card__descr">
+			    					Отзыв заказчика о компании "Древцентр"  
+			    					<div class="card__btn">
+			    						<a href="video-rewiew-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-play button__icon"></span></a>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div><!-- slider video-slider -->
+			    </li><!-- tabs-content__item -->
+			</ul>
+		</div><!-- uk-container uk-container--small -->	
+	</div><!-- tabs-content -->
+	
+</section>
+
+<section class="section about-section">
+	<div class="uk-container uk-container--small">
+		<h2 class="section__title section__title--orange">Добро пожаловать в Костромскую строительную компанию «Древцентр»!</h2>
+		<div class="about-section__content">
+			<div class="uk-grid">
+				<div class="uk-width-small-4-4 uk-width-large-2-4">
+					<div class="about-section__text">
+						<p>Компания "Древцентр" сегодня - это надежные и быстрые инвестиции в строительство загородного дома из бруса на самых выгодных условиях! Мы предлагаем возведение дома от фундамента и под крышу в срок от 7 дней ("под усадку" на свайно - винтовом фундаменте), абсолютно без предоплаты в любое время года! От 40 дней на ленточном фундаменте в теплое время.<br>
+						Уважаемые заказчики, в любой момент вы можете посетить наш "живой" строящийся объект в Московской области! Так вы лично сможете оценить качество строительного материала и мастерство рабочих, побеседовать с бригадиром! <br>
+						<b>Древцентр - честные решения!</b></p>
+					</div>					
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4 uk-flex-order-first-large">
+					<div class="target-block">
+						<div class="target-block__image" style="background-image: url(img/target-photo-1.jpg);">
+							<!-- <img src="img/target-photo-1.jpg" alt="" class="target-block__image"> -->
+							<div class="target-block__text">
+								<span class="target-block__word target-block__word--green">просмотр</span><br>
+								<span class="target-block__word">СТРОЯЩЕГОСЯ</span><br>
+								<span class="target-block__word">ОБЪЕКТА</span>								
+							</div>
+						</div>
+						<div class="target-block__btn">
+							<a href="#backCall" class="button button--green target-block__button" data-uk-modal>ЗАПИСАТЬСЯ</a>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-small-2-4 uk-width-large-1-4">
+					<div class="target-block">
+						<div class="target-block__image" style="background-image: url(img/target-photo-2.jpg);">
+							<!-- <img src="img/target-photo-1.jpg" alt="" class="target-block__image"> -->
+							<div class="target-block__text">
+								<span class="target-block__word">обратный</span><br>							
+								<span class="target-block__word target-block__word--green">ЗВОНОК</span>
+							</div>
+						</div>
+						<div class="target-block__btn">
+							<a href="#backCall" class="button button--green target-block__button" data-uk-modal>ЗАКАЗАТЬ</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section advantages-section">
+	<div class="uk-container uk-container--small">
+		<h2 class="section__title">Работать с нами надежно!</h2>
+		<div class="uk-grid">
+			<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+				<div class="advantage-block">
+					<div class="advantage-block__icon-wrap">
+						<img src="img/advantage-1.png" alt="" class="advantage-block__icon">
+					</div>
+					<div class="advantage-block__text">Собственное<br>производство бруса</div>
+				</div><!-- advantage-block -->				
+			</div>
+
+			<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+				<div class="advantage-block">
+					<div class="advantage-block__icon-wrap">
+						<img src="img/advantage-2.png" alt="" class="advantage-block__icon">
+					</div>
+					<div class="advantage-block__text">Квалифицированные<br>бригады</div>
+				</div><!-- advantage-block -->				
+			</div>
+
+			<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+				<div class="advantage-block">
+					<div class="advantage-block__icon-wrap">
+						<img src="img/advantage-3.png" alt="" class="advantage-block__icon">
+					</div>
+					<div class="advantage-block__text">Работаем<br>без предоплаты</div>
+				</div><!-- advantage-block -->				
+			</div>
+
+			<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+				<div class="advantage-block">
+					<div class="advantage-block__icon-wrap">
+						<img src="img/advantage-4.png" alt="" class="advantage-block__icon">
+					</div>
+					<div class="advantage-block__text">Гарантия<br>3 года</div>
+				</div><!-- advantage-block -->				
+			</div>
+		</div>		
+	</div><!-- uk-container uk-container--small -->	
+</section>
+
+<section class="section doc-section">
+	<div class="uk-container uk-container--small">
+		<h2 class="section__title">Документация</h2>
+		<div class="uk-grid">
+			<div class="uk-width-medium-2-2 uk-width-large-1-2">
+				<a href="img/ip.jpeg" class="button button--orange doc-section__button" data-uk-lightbox>
+					<span class="icon icon-eye button__icon--left doc-section__button__icon"></span>
+					<span class="doc-section__button__text">Смотреть свидетельство регистрации ИП</span>
+				</a>
+			</div>
+			<div class="uk-width-medium-2-2 uk-width-large-1-2">
+				<a href="" class="button button--green doc-section__button">
+					<span class="icon icon-download button__icon--left doc-section__button__icon"></span>
+					<span class="doc-section__button__text">Скачать договор на строительство дома</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section content-section">
+	<div class="content">
+		<div class="uk-container uk-container--small">
+			<h2 class="section__title">Деревянные дома из бруса</h2>
+			<p>Мечтаете о своем собственном жилье? Красивый и теплый дом из бруса – это идеальный вариант уютного гнездышка, которым можно обзавестись в весьма сжатые сроки. Уникальные свойства натуральной древесины наполняют дом невероятной атмосферой уюта. Зимой в таком доме тепло, а летом прохладно. Компания «ДревЦентр» предлагает своим клиентам лучшие дома из бруса. Высокое качество обусловлено сочетанием древнейших строительных и архитектурных традиций русских мастеров с передовыми технологиями. Это позволяет нам создавать красивые, теплые, надежные и долговечные деревянные дома из бруса. Если вам нужен жилой дом из бруса, мы с радостью предоставим вашему вниманию самые интересные проекты построек. У нас вы найдете элитный дом из бруса с мансардой или более скромные постройки эконом класса.</p>
+			<h3 style="text-align: center;">Красивые дома из бруса</h3>
+			<p>Каждый человек, живущий в большом и шумном городе, нуждается в тишине, покое и отдыхе. Достаточно провести неделю в уютном загородном доме для того, чтобы восстановить силы. Красивые деревянные дома, изготовленные из бруса, как нельзя лучше подходят для отдыха. Компактные домики без единого сучка и неровностей выглядят безупречно. Сказочные крылечки, мансарды и балкончики манят своим эстетичным видом и уютом.</p>
+			<p>Взгляните на предложенные нами красивые одноэтажные и двухэтажные дома из бруса. Наверняка, среди них вы найдете дом своей мечты. А если среди готовых проектов нет подходящего для вас варианта, то мы готовы работать по индивидуальному проекту. Купив у нас красивый дом из бруса вы никогда не пожалеете о выгодном приобретении. Изысканный внешний вид, удобная планировка и надежность наших домов будут радовать вас и ваших близких долгие годы.</p>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
+
+
+
+
+ 

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/libs/uikit.min.css">
+		<link rel="stylesheet" href="css/libs/sticky.min.css">
+		<link rel="stylesheet" href="css/libs/tooltip.min.css">
+		<link rel="stylesheet" href="css/libs/slick.css">
+		<link rel="stylesheet" href="css/libs/slick-theme.css">
+		<link rel="stylesheet" href="css/libs/select2.min.css">
+		<link rel="stylesheet" href="css/libs/nouislider.min.css">
+		<link rel="stylesheet" href="css/libs/accordion.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Контакты</title>
+	</head>
+<body>
+<header class="header">
+	<div class="header__top uk-visible-large">
+		<div class="uk-container uk-container--small">
+			<div class="header__content">
+				<a href="index.html" class="logo header__logo"><img src="img/logo.svg" alt="Древцентр" class="logo__img"></a>
+				<div class="header__slogan">Твой дом&nbsp;— <br>твоя крепость</div>
+				<div class="header__contact">
+					<a href="tel:8(960)7471570" class="header__phone header__phone--icon">(960)&nbsp;747&nbsp;15&nbsp;70</a>
+					<a href="mailto:info@drevcentr.ru" class="header__email">info@drevcentr.ru</a>
+				</div>
+				<div class="header__contact">
+					<a href="tel:8(499)7057717" class="header__phone">(499)&nbsp;705&nbsp;77&nbsp;17</a>
+					<div class="header__favorites">
+						<a href="#" class="header__favorites-link">Избранные проекты</a>			
+						<span class="header__favorites-value">2</span>
+					</div>
+				</div>
+			</div><!-- header__content -->
+		</div><!-- uk-container uk-container--small -->	
+	</div><!-- header__top -->
+	
+	<div class="header__bottom uk-visible-large">
+		<div class="uk-container uk-container--small">
+			<nav class="uk-nav main-nav uk-clearfix">
+				<ul class="uk-navbar-nav main-nav__list">
+					<li class="uk-parent main-nav__item uk-active">
+						<a href="index.html" class="main-nav__link">Главная</a>
+					</li>
+					<li class="uk-parent main-nav__item" data-uk-dropdown='{delay: 0, remaintime: 50}'>
+						<a href="projects.html" class="main-nav__link">Проекты</a>
+						<div class="uk-dropdown uk-dropdown-small uk-dropdown--subnav">
+							<ul class="main-subnav__list">
+								<li class="main-subnav__item"><a class="main-subnav__link" href="projects-with-filter.html">Дома из бруса</a></li>
+								<li class="main-subnav__item"><a class="main-subnav__link" href="projects-with-filter.html">Бани из бруса</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="uk-parent main-nav__item">
+						<a href="services.html" class="main-nav__link">Наши услуги</a>
+					</li>
+					<li class="uk-parent main-nav__item" data-uk-dropdown='{delay: 0, remaintime: 50}'>
+						<a href="foto-report.html" class="main-nav__link">Фотоотчеты</a>
+						<div class="uk-dropdown uk-dropdown-small uk-dropdown--subnav">
+							<ul class="main-subnav__list">
+								<li class="main-subnav__item"><a class="main-subnav__link" href="foto-report-detail.html">Строительство домов из бруса</a></li>
+								<li class="main-subnav__item"><a class="main-subnav__link" href="foto-report-detail.html">Строительство фундаментов</a></li>
+								<li class="main-subnav__item"><a class="main-subnav__link" href="foto-report-detail.html">Отделочные работы</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="uk-parent main-nav__item">
+						<a href="video-rewiews.html" class="main-nav__link">Видео отзывы</a>
+					</li>
+					<li class="uk-parent main-nav__item">
+						<a href="" class="main-nav__link">Производство</a>
+					</li>
+					<li class="uk-parent main-nav__item">
+						<a href="contact.html" class="main-nav__link">Контакты</a>
+					</li>
+				</ul>
+			</nav><!-- main-nav -->	
+		</div><!-- uk-container uk-container--small -->		
+	</div><!-- header__bottom -->
+
+	<!-- <div class="header__sticky" data-uk-sticky="{top:-100, animation: 'uk-animation-slide-top'}"> -->
+	<div class="header__sticky">
+		<div class="uk-container uk-container--small">
+			<div class="header__content">
+				<a href="index.html" class="logo header__logo header__logo--sticky"><img src="img/logo.svg" alt="Древцентр" class="logo__img logo__img--sticky"></a>
+				<div class="header__contact header__contact--sticky uk-visible-large">
+					<a href="tel:8(960)7471570" class="header__phone header__phone--icon header__phone--sticky">(960)&nbsp;747&nbsp;15&nbsp;70</a>
+				</div>
+				<div class="header__contact header__contact--sticky uk-visible-large">
+					<a href="tel:8(499)7057717" class="header__phone header__phone--sticky">(499)&nbsp;705&nbsp;77&nbsp;17</a>
+				</div>
+				<a href="mailto:info@drevcentr.ru" class="header__email uk-visible-large">info@drevcentr.ru</a>
+				<div class="header__burger">
+					<a href="#mobileMenu" class="header__burger-link uk-hidden-large" data-uk-offcanvas="{mode:'slide'}"><span class="icon icon-burger header__burger-icon"></span></a>	
+				</div>
+			</div><!-- header__content -->
+		</div><!-- uk-container uk-container--small -->
+	</div>
+	<div id="mobileMenu" class="uk-offcanvas">
+	    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip mobile-menu">
+			<ul class="uk-nav uk-nav-offcanvas mobile-menu__list">
+				<li class="uk-parent mobile-menu__item uk-active"><a href="index.html" class="mobile-menu__link">Главная</a></li>
+				<ul class="uk-nav uk-nav-side uk-nav-parent-icon mobile-submenu__list" data-uk-nav>
+				    <li class="uk-parent mobile-menu__item"><a href="#">Проекты</a>
+				        <ul class="uk-nav-sub mobile-submenu__list">
+				            <li class="mobile-submenu__item"><a class="mobile-submenu__link" href="projects-with-filter.html">Дома из бруса</a></li>
+				            <li class="mobile-submenu__item"><a class="mobile-submenu__link" href="projects-with-filter.html">Бани из бруса</a></li>
+				        </ul>
+				    </li>
+				</ul>
+				<li class="uk-parent mobile-menu__item"><a href="services.html" class="mobile-menu__link">Наши услуги</a></li>
+				<ul class="uk-nav uk-nav-side uk-nav-parent-icon mobile-submenu__list" data-uk-nav>
+				    <li class="uk-parent mobile-menu__item"><a href="foto-report.html">Наши фотоотчеты</a>
+				        <ul class="uk-nav-sub mobile-submenu__list">
+				            <li class="mobile-submenu__item"><a class="mobile-submenu__link" href="foto-report-detail.html">Строительство домов из бруса</a></li>
+				            <li class="mobile-submenu__item"><a class="mobile-submenu__link" href="foto-report-detail.html">Строительство фундаментов</a></li>
+				            <li class="mobile-submenu__item"><a class="mobile-submenu__link" href="foto-report-detail.html">Отделочные работы</a></li>
+				        </ul>
+				    </li>
+				</ul>
+				<li class="uk-parent mobile-menu__item"><a href="video-rewiews.html" class="mobile-menu__link">Видео отзывы</a></li>
+				<li class="uk-parent mobile-menu__item"><a href="" class="mobile-menu__link">Производство</a></li>
+				<li class="uk-parent mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Контакты</a></li>
+
+			</ul>
+	    </div>
+	</div>
+</header>
+
+
+<div class="breadcrumbs">
+	<div class="uk-container uk-container--small">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+			<li class="breadcrumbs__item"><span href="" class="breadcrumbs__link">Контакты</span></li>
+		</ul>
+	</div>
+</div>
+
+<div class="page-content">
+	<div class="uk-container uk-container--small">
+		<h1 class="h1">Контакты</h1>
+		<div class="uk-grid">
+			<div class="uk-width-large-1-2">
+				<h2 class="color--orange">Основной профиль организации</h2>
+				<p><b>Производство деревянных домокомплектов из классического и профилированного бруса собственного производства.</b></p>
+				<p>
+					<b>Руководитель СК "Древцентр"</b><br>
+					(Консультация, расчет проектов, заключения договоров, решение текущих вопросов) <br>
+					<b>ИП Цветков Максим Александрович</b> ОГРНИП  313443335100015 <br>
+					Тел. <a href="tel:8(960)7471570" style="color:#333;">8(960)&nbsp;747&nbsp;15&nbsp;70</a><br>
+					Часы работы: с 8.00 до 21.00 (без выходных) <br><br>
+					<b>Представитель в г. Москва</b><br>
+					Тел. <a href="tel:8(499)7057717" style="color:#333;">8(499)&nbsp;705&nbsp;77&nbsp;17</a><br>
+					Часы работы: с 8.00 до 21.00 (без выходных) <br>
+				</p>
+				<button class="button button--orange button--accordion" data-uk-toggle="{target:'#accRec', cls: 'open'}">Реквизиты компании</button>
+			    <div class="accordion-content__requisites" id="accRec">Реквизиты компании Реквизиты компании Реквизиты компании Реквизиты компании Реквизиты компании</div>
+
+				<p>Эл.почта <a href="mailto:info@drevcenter.ru" style="color:#F08B35;">info@drevcenter.ru</a></p>
+				<p>Работаем даже в праздничные и выходные дни.</p>
+				<p><b>Абсолютно бесплатный выезд специалиста для реальной оценки возможности подъезда автотранспорта с домокомплектом к Вашему участку и заключение договора на месте!</b></p>
+				
+
+			</div>
+
+			<div class="uk-width-large-1-2">
+				<div class="contact__form-wrap" id="form">
+					<div id="formVisible">						
+						<h2 class="color--orange">Отправьте нам сообщение</h2>
+						<form action="" class="form">
+							<div class="form__row">
+								<div class="form__title">Ваше сообщение</div>
+								<textarea name="" id="" cols="30" rows="10" class="form__textarea" ></textarea>
+							</div>
+							<div class="form__row">
+								<div class="form__title">Как к вам обращаться?</div>
+								<input type="text" class="form__input">
+							</div>
+							<div class="uk-grid">
+								<div class="uk-width-medium-1-2">
+									<div class="form__row">
+										<div class="form__title">Ваш email</div>
+										<input type="email" class="form__input">
+									</div>
+								</div>
+								<div class="uk-width-medium-1-2">
+									<div class="form__row">
+										<div class="form__title">Номер телефона для связи</div>
+										<input type="tel" class="form__input">
+									</div>
+								</div>
+							</div>
+							<div class="form__row form__btns uk-text-right">
+								<button class="button button--green" type="submit">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+					<!-- При успешной отправке формы скрывать #formVisible и показывать  #formSubmit -->
+				<div id="formSubmit" style="display: none;">
+					<h2 class="color--orange">Спасибо, мы свяжемся с вами в ближайшее время!</h2>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+	<div class="uk-container uk-container--small">
+		<h2>Советуем посмотреть популярные проекты</h2>
+		
+		<div class="slider foto-slider">
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в  
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- slider foto-slider -->
+	</div>
+
+	<section class="section map-section">
+		<div class="uk-container uk-container--small">
+			<h2 class="section__title map-section__title">Карта домов, построенных компанией Древцентр</h2>			
+		</div>
+		<div id="map"></div>
+	</section>
+
+
+<footer class="footer">
+	<div class="footer__top">
+		<div class="uk-container uk-container--small">
+			<div class="uk-grid">
+				<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+					<a href="index.html" class="logo footer__logo"><img src="img/logo.svg" alt="Древцентр" class="logo__img"></a>
+					<div class="footer__counter">
+						<img src="img/counter.jpg" alt="">
+					</div>
+				</div>
+				<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+					<div class="footer-menu">
+						<div class="footer-menu__title"><a href="" class="footer-menu__title">Проекты</a></div>
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Одноэтажные дома</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Двухэтажные дома</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Бани</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Проекты домов 6х6</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Проекты домов 6х9</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Проекты домов 7х7</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Проекты домов 8х8</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Проекты домов из профилированного бруса</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+					<div class="footer-menu">
+						<div class="footer-menu__title"><a href="" class="footer-menu__title">Услуги</a></div>
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Ленточные фундаменты</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Свайно-винтовые фундаменты</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Кровли из профнастила</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Кровли из металлочерепицы</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Доставка домокомплектов</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Черновая отделка</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Отделка под ключ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="uk-width-small-4-4 uk-width-medium-2-4 uk-width-large-1-4">
+					<div class="footer-menu">
+						<div class="footer-menu__title"><a href="" class="footer-menu__title">О компании</a></div>
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Акции</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Контакты</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Документы и разрешения</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Заготовка леса</a></li>
+							<li class="footer-menu__item"><a href="" class="footer-menu__link">Производство бруса</a></li>
+						</ul>
+						<a href="http://drevcenter.ru/" class="button footer__button" target="_blank">Старая верия сайта</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- uk-container uk-container--small -->		
+	</div><!-- footer__top -->
+
+	<div class="footer__bottom">
+		<div class="uk-container uk-container--small">
+			© 2010 - 2019 Все права принадлежат правообладателям.
+			Копирование материалов запрещено. <br> 
+			Вся информация на сайте носит исключительно справочный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 ГКРФ.			
+		</div>
+	</div>
+</footer>
+
+<span class="icon icon-arrow-up go-to-top" title="Наверх" id="go-to-top"></span>
+<!-- Обратный звонок -->
+<div id="backCall" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Обратный звонок</div>
+		<div class="modal__content">
+			<form action="" class="modal__form">
+				<div class="modal__row">
+					<div class="modal__row-title">Как к вам обращаться?</div>
+					<input type="text" class="modal__row-input">
+				</div>
+				<div class="modal__row">
+					<div class="modal__row-title">Номер телефона для связи</div>
+					<input type="tel" class="modal__row-input">
+				</div>
+				<div class="modal__btns">
+					<button class="button button--red" type="submit">отправить</button>					
+				</div>
+			</form>
+		</div>
+    </div>
+</div>
+
+
+<!-- Рассчитать свой проект -->
+<div id="calcProject" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Расчитать свой проект</div>
+		<div class="modal__content">
+			<div class="modal__content">
+				<form action="" class="modal__form">
+					<div class="modal__row">
+						<div class="modal__row-title">Как к вам обращаться?</div>
+						<input type="text" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Ваш email</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Номер телефона для связи</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row modal__row--upload">
+						<input type="file" multiple id="input_down">
+						<label for="input_down"><span class="icon icon-upload"></span> Загрузить файлы</label>
+					</div>
+					<div class="modal__btns">
+						<button class="button">Отмена</button>					
+						<button class="button button--red" type="submit">отправить</button>				
+					</div>
+				</form>
+
+				<!-- При успешной отправке формы  скрывать форму и показывать блок ниже-->
+				<div id="thx-modal" style="display: none">
+					<div class="modal__title">Спасибо</div>
+					<p>Ваш эскиз отправлен, менеджер свяжется с вами в ближайшее время</p>
+					<div class="modal__btns">
+						<button class="button button--red">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- Форма с детальной станицы проекта, при клике на кнопку ЗАКАЗАТЬ -->
+<div id="toOrder" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Заявка на расчет проекта: ДБ 35 ПРОЕКТ ДОМА ИЗ БРУСА 8X10</div>
+		<div class="modal__content">
+			<div class="modal__content">
+				<form action="" class="modal__form" id="form-submit">
+					<div class="modal__row">
+						<div class="modal__row-title">Как к вам обращаться?</div>
+						<input type="text" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Ваш email</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row">
+						<div class="modal__row-title">Номер телефона для связи</div>
+						<input type="tel" class="modal__row-input">
+					</div>
+					<div class="modal__row modal__row--upload">
+						<input type="file" multiple id="input_down">
+						<label for="input_down"><span class="icon icon-upload"></span> Загрузить файлы</label>
+					</div>
+					<div class="modal__btns">
+						<button class="button">Отмена</button>					
+						<button class="button button--red" type="submit">отправить</button>					
+					</div>
+				</form>
+
+				<!-- При успешной отправке формы  скрывать форму и показывать блок ниже-->
+				<div id="thx-modal" style="display: none">
+					<div class="modal__title">Спасибо</div>
+					<p>Ваш эскиз отправлен, менеджер свяжется с вами в ближайшее время</p>
+					<div class="modal__btns">
+						<button class="button button--red">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- Задать вопрос спецу -->
+
+<div id="askQuestion" class="uk-modal modal">
+    <div class="uk-modal-dialog modal__dialog">
+        <a class="uk-modal-close uk-close modal__close"></a>
+        <div class="modal__title">Задать вопрос специалисту</div>
+		<div class="modal__content">
+				<form action="" class="form">
+					<div class="form__row">
+						<div class="form__title">Ваше сообщение</div>
+						<textarea name="" id="" cols="30" rows="10" class="form__textarea" ></textarea>
+					</div>
+					<div class="form__row">
+						<div class="form__title">Как к вам обращаться?</div>
+						<input type="text" class="form__input">
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-medium-1-2">
+							<div class="form__row">
+								<div class="form__title">Ваш email</div>
+								<input type="email" class="form__input">
+							</div>
+						</div>
+						<div class="uk-width-medium-1-2">
+							<div class="form__row">
+								<div class="form__title">Номер телефона</div>
+								<input type="tel" class="form__input">
+							</div>
+						</div>
+					</div>
+					<div class="form__row form__btns uk-text-right">
+						<button class="button button--green" type="submit">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+
+				<!-- При успешной отправке формы  скрывать форму и показывать блок ниже-->
+				<div id="thx-modal" style="display: none">
+					<div class="modal__title">Спасибо</div>
+					<p>Ваш эскиз отправлен, менеджер свяжется с вами в ближайшее время</p>
+					<div class="modal__btns">
+						<button class="button button--red">Закрыть</button>
+					</div>
+				</div>
+		</div>
+    </div>
+</div>
+<script src="js/libs/jquery-2.2.4.min.js"></script>
+<script src="js/libs/uikit.min.js"></script>
+<script src="js/libs/sticky.min.js"></script>
+<script src="js/libs/lightbox.min.js"></script>
+<script src="js/libs/tooltip.min.js"></script>
+<script src="js/libs/slick.min.js"></script>
+<script src="js/libs/select2.full.min.js"></script>
+<script src="js/libs/nouislider.min.js"></script>
+<script src="js/libs/accordion.min.js"></script>
+<script src="js/libs/jquery.maskedinput.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

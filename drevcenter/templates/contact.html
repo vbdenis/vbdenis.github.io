@@ -1,0 +1,170 @@
+{% extends "layouts/default.html" %}
+{% set title="Контакты" %}
+{% block content %}
+
+<div class="breadcrumbs">
+	<div class="uk-container uk-container--small">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+			<li class="breadcrumbs__item"><span href="" class="breadcrumbs__link">Контакты</span></li>
+		</ul>
+	</div>
+</div>
+
+<div class="page-content">
+	<div class="uk-container uk-container--small">
+		<h1 class="h1">Контакты</h1>
+		<div class="uk-grid">
+			<div class="uk-width-large-1-2">
+				<h2 class="color--orange">Основной профиль организации</h2>
+				<p><b>Производство деревянных домокомплектов из классического и профилированного бруса собственного производства.</b></p>
+				<p>
+					<b>Руководитель СК "Древцентр"</b><br>
+					(Консультация, расчет проектов, заключения договоров, решение текущих вопросов) <br>
+					<b>ИП Цветков Максим Александрович</b> ОГРНИП  313443335100015 <br>
+					Тел. <a href="tel:8(960)7471570" style="color:#333;">8(960)&nbsp;747&nbsp;15&nbsp;70</a><br>
+					Часы работы: с 8.00 до 21.00 (без выходных) <br><br>
+					<b>Представитель в г. Москва</b><br>
+					Тел. <a href="tel:8(499)7057717" style="color:#333;">8(499)&nbsp;705&nbsp;77&nbsp;17</a><br>
+					Часы работы: с 8.00 до 21.00 (без выходных) <br>
+				</p>
+				<button class="button button--orange button--accordion" data-uk-toggle="{target:'#accRec', cls: 'open'}">Реквизиты компании</button>
+			    <div class="accordion-content__requisites" id="accRec">Реквизиты компании Реквизиты компании Реквизиты компании Реквизиты компании Реквизиты компании</div>
+
+				<p>Эл.почта <a href="mailto:info@drevcenter.ru" style="color:#F08B35;">info@drevcenter.ru</a></p>
+				<p>Работаем даже в праздничные и выходные дни.</p>
+				<p><b>Абсолютно бесплатный выезд специалиста для реальной оценки возможности подъезда автотранспорта с домокомплектом к Вашему участку и заключение договора на месте!</b></p>
+				
+
+			</div>
+
+			<div class="uk-width-large-1-2">
+				<div class="contact__form-wrap" id="form">
+					<div id="formVisible">						
+						<h2 class="color--orange">Отправьте нам сообщение</h2>
+						<form action="" class="form">
+							<div class="form__row">
+								<div class="form__title">Ваше сообщение</div>
+								<textarea name="" id="" cols="30" rows="10" class="form__textarea" ></textarea>
+							</div>
+							<div class="form__row">
+								<div class="form__title">Как к вам обращаться?</div>
+								<input type="text" class="form__input">
+							</div>
+							<div class="uk-grid">
+								<div class="uk-width-medium-1-2">
+									<div class="form__row">
+										<div class="form__title">Ваш email</div>
+										<input type="email" class="form__input">
+									</div>
+								</div>
+								<div class="uk-width-medium-1-2">
+									<div class="form__row">
+										<div class="form__title">Номер телефона для связи</div>
+										<input type="tel" class="form__input">
+									</div>
+								</div>
+							</div>
+							<div class="form__row form__btns uk-text-right">
+								<button class="button button--green" type="submit">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+					<!-- При успешной отправке формы скрывать #formVisible и показывать  #formSubmit -->
+				<div id="formSubmit" style="display: none;">
+					<h2 class="color--orange">Спасибо, мы свяжемся с вами в ближайшее время!</h2>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+	<div class="uk-container uk-container--small">
+		<h2>Советуем посмотреть популярные проекты</h2>
+		
+		<div class="slider foto-slider">
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в 
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foto-slider__block">
+				<div class="card">
+					<div class="card__image-wrap">
+						<img class="card__image" data-lazy="img/foto-home/foto-home-1.jpg" alt="" >
+						<div class="card__label-bottom">№203</div>
+					</div>
+					<div class="card__descr">
+						Строительство дома из бруса размером 9х9 м. в  
+						<div class="card__btn">
+							<a href="project-detail.html" class="button button--green"> СМОТРЕТЬ <span class="icon icon-camera button__icon"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- slider foto-slider -->
+	</div>
+
+	<section class="section map-section">
+		<div class="uk-container uk-container--small">
+			<h2 class="section__title map-section__title">Карта домов, построенных компанией Древцентр</h2>			
+		</div>
+		<div id="map"></div>
+	</section>
+
+{% endblock %}
+
