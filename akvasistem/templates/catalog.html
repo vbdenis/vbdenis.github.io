@@ -1,0 +1,449 @@
+{% extends "layouts/default.html" %}
+{% set title="Каталог" %}
+{% block content %}
+
+<div class="overlay"></div>
+
+<div class="breadcrumbs">
+	<div class="uk-container uk-container--large">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+			<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Каталог</a></li>
+			<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Биметаллические радиаторы</a></li>
+			<li class="breadcrumbs__item"><span class="breadcrumbs__link">Радиатор биметаллический RIFAR A500 - 8 секций</span></li>
+		</ul>
+	</div>
+</div><!-- breadcrumbs -->
+
+<div class="page-content page-content--two-columms">
+	<div class="uk-container uk-container--large">
+		<div class="sidebar">
+			<div class="filter">
+				<form action="">
+					<div class="filter__row">
+						<div class="filter__title">Цена</div>
+						<div class="range filter__range">
+							<div class="range__value-wrap">
+								<label for="" class="label filter__label range__label">от</label>
+								<input type="text" class="input filter__input range__input">	
+							</div>
+							<div class="range__value-wrap">
+								<label for="" class="label filter__label range__label">до</label>
+								<input type="text" class="input filter__input range__input">
+							</div>
+							<div class="range__slider-wrap">
+								<div class="range__slider" id="range__slider1"></div>
+							</div>
+						</div>
+					</div>			
+					
+					<div class="uk-accordion" data-uk-accordion='{collapse: false}'>
+						<div class="filter__row">
+							<div class="uk-accordion-title filter__title">Марка<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+						    <div class="uk-accordion-content filter__accordion-content">
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-095L</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-100L</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-110</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-120</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-127</label>						    		
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-110</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-120</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-127</label>						    		
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-110</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-120</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-127</label>						    		
+						    	</div>
+
+						    </div>						
+						</div>
+						
+						<div class="filter__row">
+							<div class="uk-accordion-title filter__title">Толщина, мм<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+						    <div class="uk-accordion-content filter__accordion-content">
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>0,23</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>0,27</label>
+						    	</div>
+						    	<div class="check filter__check">
+						    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>0,3</label>
+						    	</div>
+						    </div>						
+						</div>
+
+						<div class="filter__row">
+							<div class="uk-accordion-title filter__title">Ширина<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+						    <div class="uk-accordion-content filter__accordion-content">
+						    	Ширина
+						    </div>						
+						</div>
+
+						<div class="filter__row">
+							<div class="uk-accordion-title filter__title">Стандарт<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+						    <div class="uk-accordion-content filter__accordion-content">
+								Стандарт
+						    </div>						
+						</div>
+
+						<div class="filter__row">
+							<button class="button button--blue button--full filter__submit" type="submit">Показать</button>
+						</div>
+
+						<div class="filter__row">
+							<button class="button button--full filter__reset" type="reset">Сбросить фильтр</button>
+						</div>
+					</div><!-- data-uk-accordion -->					
+				</form>
+			</div><!-- filter -->
+		</div><!-- sidebar -->
+
+		<div class="main-area uk-clearfix">		
+			<div class="catalog-top">
+				<h1 class="page-title color-blue">Радиаторы с боковой подводкой Kermi</h1>			
+				<div class="toggles">
+					<a href="#" class="toggles__link toggles__link--active">Трубы металлопластиковые и фитинги</a>
+					<a href="#" class="toggles__link">Трубы PPRC и фитинги</a>
+					<a href="#" class="toggles__link">Водопроводная труба ПЭ</a>
+					<a href="#" class="toggles__link">Трубы НПВХ напорные</a>
+					<a href="#" class="toggles__link">Трубы и фитинги REHAU</a>
+					<a href="#" class="toggles__link">Трубы стальные</a>
+				</div>
+				
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-3">
+						<a href="#" class="link-w-icon specification__link-download">
+							<div class="link-w-icon__icon-wrap"><span class="icon icon-doc"></span></div>
+							<div class="link-w-icon__txt">Скачать прайс лист (XLS)</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<a href="#" class="link-w-icon specification__link-download">
+							<div class="link-w-icon__icon-wrap"><span class="icon icon-doc"></span></div>
+							<div class="link-w-icon__txt">Скачать сертификат (PDF)</div>
+						</a>
+					</div>
+				</div>
+			</div><!-- catalog-top -->	
+
+			<div class="sort">
+				<div class="filter-burger uk-hidden-large" id="filterBtn">
+					<span class="filter-burger__piece"></span>
+					<span class="filter-burger__piece"></span>
+					<span class="filter-burger__piece"></span>
+				</div>
+				<div class="sort__right">
+					<span class="sort__title">Сортировать&nbsp;по:</span>
+					<div class="sort__links">
+						<a href="#" class="sort__link asc">цене</a>
+						<a href="#" class="sort__link">названию</a>
+						<a href="#" class="sort__link desc">популярности</a>						
+					</div>
+				</div>
+
+				<div class="filter-mobile__wrap">
+					<div class="filter">
+						<form action="">
+							<div class="filter__row filter-mobile__row">
+								<div class="filter__title">Цена</div>
+								<div class="range filter__range">
+									<div class="range__value-wrap">
+										<label for="" class="label filter__label range__label">от</label>
+										<input type="text" class="input filter__input range__input">	
+									</div>
+									<div class="range__value-wrap">
+										<label for="" class="label filter__label range__label">до</label>
+										<input type="text" class="input filter__input range__input">
+									</div>
+									<div class="range__slider-wrap">
+										<div class="range__slider" id="range__slider2"></div>
+									</div>
+								</div>
+							</div>			
+							
+							<div class="uk-accordion" data-uk-accordion='{collapse: false}'>
+								<div class="filter__row filter-mobile__row">
+									<div class="uk-accordion-title filter__title">Марка<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+								    <div class="uk-accordion-content filter__accordion-content">
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-095L</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-100L</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-110</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-120</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-127</label>								    		
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-120</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-127</label>						    		
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-110</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-120</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>NV23S-127</label>						    		
+								    	</div>
+
+								    </div>						
+								</div>
+								
+								<div class="filter__row filter-mobile__row">
+									<div class="uk-accordion-title filter__title">Толщина, мм<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+								    <div class="uk-accordion-content filter__accordion-content">
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>0,23</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>0,27</label>
+								    	</div>
+								    	<div class="check filter__check">
+								    		<label class="label check__label filter__checkbox-label"><input type="checkbox" class="check__input checkbox filter__checkbox"><span class="check__box"></span>0,3</label>
+								    	</div>
+								    </div>						
+								</div>
+
+								<div class="filter__row filter-mobile__row">
+									<div class="uk-accordion-title filter__title">Ширина<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+								    <div class="uk-accordion-content filter__accordion-content">
+								    	Ширина
+								    </div>						
+								</div>
+
+								<div class="filter__row filter-mobile__row">
+									<div class="uk-accordion-title filter__title">Стандарт<span class="icon icon-arrow_down filter__icon-arrow"></span></div>
+								    <div class="uk-accordion-content filter__accordion-content">
+										Стандарт
+								    </div>						
+								</div>
+
+								<div class="filter__row filter-mobile__row">
+									<button class="button button--blue button--full filter__submit" type="submit">Показать</button>
+								</div>
+
+								<div class="filter__row filter-mobile__row">
+									<button class="button button--full filter__reset" type="reset">Сбросить фильтр</button>
+								</div>
+							</div><!-- data-uk-accordion -->					
+						</form>
+					</div><!-- filter -->
+				</div><!-- filter-mobile__wrap -->			
+			</div><!-- sort -->
+
+			
+			<div class="catalog-list">
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+									<div class="card-h__label card-h__label--new">Новинка</div>
+									<div class="card-h__label card-h__label--hot">Хит&nbsp;продаж</div>				
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-1.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+									<div class="card-h__label card-h__label--new">Новинка</div>
+									<div class="card-h__label card-h__label--hot">Хит&nbsp;продаж</div>				
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-2.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+									<div class="card-h__label card-h__label--new">Новинка</div>
+									<div class="card-h__label card-h__label--hot">Хит&nbsp;продаж</div>				
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-1.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-2.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+									<div class="card-h__label card-h__label--new">Новинка</div>
+									<div class="card-h__label card-h__label--hot">Хит&nbsp;продаж</div>				
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-1.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+									<div class="card-h__label card-h__label--new">Новинка</div>
+									<div class="card-h__label card-h__label--hot">Хит&nbsp;продаж</div>				
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-1.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+									<div class="card-h__label card-h__label--new">Новинка</div>
+									<div class="card-h__label card-h__label--hot">Хит&nbsp;продаж</div>				
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-1.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+					<div class="uk-width-medium-1-2">
+						<a href="" class="card-h">
+							<div class="card-h__top-line">
+								<div class="card-h__labels">
+									<div class="card-h__label card-h__label--new">Новинка</div>
+									<div class="card-h__label card-h__label--hot">Хит&nbsp;продаж</div>				
+								</div>
+								<div class="card-h__label card-h__label--available">В&nbsp;наличии</div>
+							</div>
+							<div class="card-h__content">
+								<div class="card-h__image-wrap">
+									<img src="img/card-h-1.jpg" alt="" class="card-h__image">
+								</div>
+								<div class="card-h__info">
+									<div class="card-h__title">Радиатор с боковой подводкой FKO тип 22, Kermi</div>
+									<div class="card-h__price-wrap">от&nbsp;<span class="card-h__price-value">1880</span><span class="card-h__currency">&nbsp;р.</span></div>
+								</div>								
+							</div>
+						</a>
+					</div>
+				</div>
+			</div><!-- catalog-list -->
+			<div class="pagination__wrap">
+				<div class="pagination__title">Страница:</div>
+				<ul class="uk-pagination pagination">
+					<li class="uk-pagination-previous pagination__item--prev"><a href=""><span class="pagination__previous-arr">&#8592;</span><span class="pagination__previous-text">предыдущая</span></a></li>
+				    <li class="pagination__item uk-active"><a class="pagination__link" href="">1</a></li>
+				    <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
+				    <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+				    <li class="uk-pagination-next pagination__item--next"><a href=""><span class="pagination__next-text">следующая</span><span class="pagination__next-arr">&#8594;</span></a></li>
+				</ul>
+			</div>
+
+			<section class="section--in content-section">
+				<h2>Заголовок  для SEO</h2>
+				<p>Накопленный за эти годы опыт позволяет полностью обеспечить потребности партнеров в части инженерной сантехники и позволяет нашим клиентам осуществлять реализацию проектов любого масштаба и сложности от квартиры или коттеджа до торгового цента, завода и микрорайона.</p>
+				<p>Мы предлагаем самый большой ассортимент бытовой сантехники, трубопроводной арматуры, отопительных и измерительных приборов, теплоизоляционного материала, канализационного и насосного оборудования, уплотнительных материалов, сантехнических инструментов, оборудования для вентиляции и сопутствующих товаров. Мы постоянно расширяем и обновляем ассортимент продукции представленный в нашем каталоге.</p>
+			</section>
+
+		</div><!-- main-area -->
+	</div><!-- uk-container uk-container--large -->	
+</div><!-- page-content -->
+
+{% endblock %}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'TT Norms';
+    src: url('TTNorms-Bold.eot');
+    src: url('TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTNorms-Bold.woff2') format('woff2'),
+        url('TTNorms-Bold.woff') format('woff'),
+        url('TTNorms-Bold.ttf') format('truetype'),
+        url('TTNorms-Bold.svg#TTNorms-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('TTNorms-Medium.eot');
+    src: url('TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTNorms-Medium.woff2') format('woff2'),
+        url('TTNorms-Medium.woff') format('woff'),
+        url('TTNorms-Medium.ttf') format('truetype'),
+        url('TTNorms-Medium.svg#TTNorms-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('TTNorms-Regular.eot');
+    src: url('TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTNorms-Regular.woff2') format('woff2'),
+        url('TTNorms-Regular.woff') format('woff'),
+        url('TTNorms-Regular.ttf') format('truetype'),
+        url('TTNorms-Regular.svg#TTNorms-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

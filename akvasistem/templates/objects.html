@@ -1,0 +1,175 @@
+{% extends "layouts/default.html" %}
+{% set title="Объекты" %}
+{% block content %}
+
+<div class="breadcrumbs">
+	<div class="uk-container uk-container--large">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+			<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">О компании</a></li>
+			<li class="breadcrumbs__item"><span class="breadcrumbs__link">Объекты</span></li>
+		</ul>
+	</div>
+</div><!-- breadcrumbs -->
+
+<div class="page-content page-content--two-columms">
+	<div class="uk-container uk-container--large">
+		<div class="sidebar">
+			<nav class="sidebar-nav">
+				<ul class="sidebar-nav__list">
+					<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">О компании</a></li>
+					<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">Новости</a></li>
+					<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">Вакансии</a></li>
+					<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">Сотрудничество</a></li>
+					<li class="sidebar-nav__item">
+						<a href="" class="sidebar-nav__link">Партнеры</a>
+						<span class="icon icon-arrow-right sidebar-nav__arr"></span>
+						<ul class="sidebar-nav__sublist">
+							<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">Джилекс</a></li>
+							<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">Grundfos</a></li>
+							<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">Wilo</a></li>
+							<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">IMP Pumps</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-nav__item"><a href="" class="sidebar-nav__link">Объекты</a></li>
+				</ul>
+			</nav>
+		</div><!-- sidebar -->		
+
+		<div class="main-area uk-clearfix">			
+			<h1 class="page-title color-blue">Объекты</h1>	
+			<p style="font-size: 20px;font-weight: 500;line-height: 26px;">Накопленный за эти годы опыт позволяет полностью обеспечить потребности партнеров в части инженерной сантехники и позволяет нашим клиентам осуществлять реализацию проектов любого масштаба и сложности от квартиры или коттеджа до торгового цента, завода и микрорайона.</p>
+
+			<hr>
+			
+			<div class="tabs">
+				<ul class="uk-tab tabs-menu" data-uk-tab="{connect:'#tabs-id', animation: 'fade', swiping: false}">
+				    <li class="tabs-menu__item"><a class="tabs-menu__link" href="">Все</a></li>
+				    <li class="tabs-menu__item uk-active"><a class="tabs-menu__link" href="">Строительство</a></li>
+				    <li class="tabs-menu__item"><a class="tabs-menu__link" href="">Частные домовладения</a></li>
+				</ul>
+				<ul id="tabs-id" class="uk-switcher uk-margin tabs-content">
+					<li class="tabs-content__item">
+						<div class="objects__list">
+							<div class="uk-grid">
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-1.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Завод «Магна Автомотив Рус», Калуга, технопарк «Грабцево»</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-2.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Фабрика ООО «Нестле Россия», Калужская обл., Обнинск, ООО «Индустриальный парк «Ворсино»</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-3.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Детская клиническая больница им. Морозова, Москва, 4-й Добрынинский пер.</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-4.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Ледовый дворец, Тверская обл., г. Кимры</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-5.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Фабрика ООО «Нестле Россия», Калужская обл.</div>		
+									</a>									
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					<li class="tabs-content__item">
+						<div class="objects__list">
+							<div class="uk-grid">
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-1.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Завод «Магна Автомотив Рус», Калуга, технопарк «Грабцево»</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-2.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Фабрика ООО «Нестле Россия», Калужская обл., Обнинск, ООО «Индустриальный парк «Ворсино»</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-3.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Детская клиническая больница им. Морозова, Москва, 4-й Добрынинский пер.</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-4.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Ледовый дворец, Тверская обл., г. Кимры</div>		
+									</a>									
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="tabs-content__item">
+						<div class="objects__list">
+							<div class="uk-grid">
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-2.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Фабрика ООО «Нестле Россия», Калужская обл., Обнинск, ООО «Индустриальный парк «Ворсино»</div>		
+									</a>									
+								</div>
+
+								<div class="uk-width-small-1-2 uk-width-medium-1-3">
+									<a class="object-block" href="">
+										<div class="object-block__img-wrap">
+											<img src="img/object-block-3.jpg" alt="" class="object-block__img">
+										</div>
+										<div class="object-block__title">Детская клиническая больница им. Морозова, Москва, 4-й Добрынинский пер.</div>		
+									</a>									
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div><!-- tabs -->	
+		</div><!-- main-area -->		
+	</div><!-- uk-container uk-container--large -->
+</div><!-- page-content page-content--two-columms -->
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	min-height: 0;
+	min-width: 0;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+input, textarea {
+	outline: none;
+}
+input, textarea, select, button {
+	font-family: 'TTNorms', sans-serif;
+}
