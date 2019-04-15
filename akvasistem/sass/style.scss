@@ -1127,7 +1127,7 @@ ol li:not([class]):before {
 	background-size: 100% 100%;
 
 }
-// objects-secion
+// objects-section
 .objects-section__content {
 	background-image: url('../img/objects-bg.jpg');
 	background-size: contain;
@@ -1135,27 +1135,27 @@ ol li:not([class]):before {
 	background-position: left center;
 }
 // footer
-// .page-without-footer-wrap {
-// 	position: relative;
-// 	z-index: 2;
-// 	background-color: #fff;
-// 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.09);
-// 	transition: box-shadow 1s ease;
-// }
-// .page-without-footer-wrap.shadow {
-//     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);	
-// }
+.page-without-footer-wrap {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.09);
+	transition: box-shadow 1s ease;
+}
+.page-without-footer-wrap.shadow {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);	
+}
 .footer {
 	background-color: #f4f7fb;
 	border-top: 1px solid #dfe4eb;
 }
-// footer.sticky {
-// 	position: fixed;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	z-index: 1;
-// }
+footer.sticky {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
 .footer-top {
 	padding-bottom: 30px;
 	border-bottom: 1px solid #dfe4eb;

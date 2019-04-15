@@ -1,13 +1,13 @@
 $(document).ready(function(){
-	// // Рассчитываем высоту футера и подставляем это значение в padding-bottom для body. Для разрешения > 1000px
-	// if ($(window).width() >= 1000) {
-	// 	$('footer').addClass('sticky');
-	// 	// $('.page-without-footer-wrap').addClass('shadow');
-	// 	$('footer').each(function(){
-	// 		var footerHeight = $(this).outerHeight();
-	// 		$('body').css('padding-bottom', footerHeight);
-	// 	});
-	// }
+	// Рассчитываем высоту футера и подставляем это значение в padding-bottom для body. Для разрешения > 1000px
+	if ($(window).width() >= 1000) {
+		$('footer').addClass('sticky');
+		$('.page-without-footer-wrap').addClass('shadow');
+		$('footer').each(function(){
+			var footerHeight = $(this).outerHeight();
+			$('body').css('padding-bottom', footerHeight);
+		});
+	}
 
 	// Показываем блоки слайдера после его загрузки, предотвращая его разваливание
 	$('.main-slider').on('init', function(){
