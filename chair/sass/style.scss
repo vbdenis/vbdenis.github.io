@@ -1,0 +1,92 @@
+@import "fonts";
+
+$text: #111;
+$text-lgray: #999;
+
+
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+body {
+	margin: 0;
+	font-family: PFHighway, sans-serif;
+	// background-color: #ccc;
+	color: $text;
+}
+
+.container {
+	margin: 0 auto;
+	background-color: #fff;
+}
+.button {
+	display: block;
+	padding: 6px;
+	text-decoration: none;
+	background-color: #111;
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+	border: 2px solid transparent;
+	border-radius: 28px;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	&:hover {
+		background-color: #fff;
+		border: 2px solid #111;
+		color: $text;
+	}
+}
+.hidden-medium {
+	display: block;
+}
+.visible-medium {
+	display: none;
+}
+.card {
+	padding: 10% 16px;
+	display: flex;
+	flex-direction: column;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+.card__img-wrap {
+	margin-bottom: 27px;
+
+}
+.card__title {
+	margin-bottom: 25px;
+	font-family: PFHighway, sans-serif;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 40px;
+	color: $text;
+}
+.card__descr {
+	margin-bottom: 31px;
+	font-family: PragmaticaLightC, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: $text-lgray;
+}
+.card__price-wrap {
+	margin-bottom: 23px;
+	display: flex;
+	align-items: flex-end;
+	font-family: PFHighway, sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 40px;
+}
+.card__old-price {
+	margin-left: 24px;
+	font-size: 20px;
+	line-height: 28px;
+	color: $text-lgray;
+}
+
+
+@import "media";

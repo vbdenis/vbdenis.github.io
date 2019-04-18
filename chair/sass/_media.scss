@@ -1,0 +1,93 @@
+@media (min-width:640px) {
+	.button {
+		padding: 12px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.hidden-medium {
+		display: none;
+	}
+	.visible-medium {
+		display: block;
+	}
+	.card {
+		padding: 10% 7%;
+	}
+	.card__img-wrap {
+		margin-bottom: 40px;
+	}
+	.card__title {
+		font-size: 40px;
+		line-height: 46px;
+		margin-bottom: 27px;
+	}
+	.card__descr {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 38px;
+	}
+	.card__buy-line {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.card__price-wrap {
+		margin-bottom: 0;
+		flex-basis: 65%;
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.card__old-price {
+		font-size: 32px;
+		line-height: 38px;
+	}
+	.card__button {
+		flex-basis: 35%;
+	}
+}
+
+
+@media (min-width: 960px) {
+	.card {
+		flex-direction: row;
+		align-items: center;
+	}
+	.card__img-wrap {
+		flex-basis: 50%;
+		margin-bottom: 0;
+	}
+	.card__info {
+		margin-left: 4.5%;
+		flex-basis: 50%;
+	}
+	.card__title {
+		font-size: 56px;
+		line-height: 64px;
+		margin-bottom: 16px;
+	}
+	.card__buy-line {
+		flex-direction: column;
+		align-items: unset;
+	}
+	.card__price-wrap {
+		flex-basis: 100%;
+		margin-bottom: 23px;
+	}
+	.card__button {
+		flex-basis: 100%;
+		max-width: 240px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.card {
+		padding: 10%;
+	}
+	.card__title {
+		font-size: 64px;
+		line-height: 72px;
+	}
+}
+
+
+
