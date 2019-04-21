@@ -1,0 +1,158 @@
+<mjml>
+
+  <mj-head>
+
+    <mj-attributes>
+      <mj-all font-family="Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text align="center" color="#464748" />
+      <mj-section padding="0px"></mj-section>
+    </mj-attributes>
+
+  </mj-head>
+
+  <mj-body background-color="#ffffff" width="700px">
+
+    <mj-include path="./header.mjml" />
+    
+    
+    //Секция с логотипом
+    <mj-section background-color="#ffffff" padding="0px">
+      <mj-column width="100%">
+        <mj-image href="https://pandorarussia.ru/" src="http://denisv12.ru/pandora/pic/logo.png" alt="Pandora logo" align="center" padding="30px 0px 15px" width="198px"></mj-image> 
+      </mj-column>    
+    </mj-section>
+    
+    
+    //Секция с меню
+    <mj-section background-color="#ffffff" padding="0px 0px 30px">
+      <mj-column width="100%">
+        <mj-navbar base-url="https://pandorarussia.ru" hamburger="hamburger" ico-color="#000000">
+          <mj-navbar-link href="https://pandorarussia.ru/charms" color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ШАРМЫ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mj-navbar-link>
+          <mj-navbar-link href="https://pandorarussia.ru/bracelets" color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;БРАСЛЕТЫ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mj-navbar-link>
+          <mj-navbar-link href="https://pandorarussia.ru/rings" color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;КОЛЬЦА&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mj-navbar-link>
+          <mj-navbar-link href="https://pandorarussia.ru/earrings" color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;СЕРЬГИ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mj-navbar-link>
+          <mj-navbar-link href="https://pandorarussia.ru/necklaces-and-pendants" color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;КОЛЬЕ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mj-navbar-link>
+          <mj-navbar-link href="https://pandorarussia.ru/sales" color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;АКЦИИ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mj-navbar-link>
+        </mj-navbar>
+      </mj-column>    	
+    </mj-section>
+    
+    //Секция с мадамой
+    <mj-section  background-repeat=no-repeat background-size=cover background-url=http://denisv12.ru/pandora/pic/madama.jpg padding="30px 0px 200px 0px" >
+      <mj-column width="100%">
+        <mj-table width="100%" padding="0 40px">
+        <tr>
+          <td width=50><img alt="" src="http://denisv12.ru/pandora/pic/check.png" width="40px"/></td>
+          <td>Здравствуйте, <b> {{USERNAME}}</b>&nbsp;!<br>Ваш заказ <b>{{order}}</b> от <b>{{date}}</b> собран.</td>
+        </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    
+    //секция с таблицей товаров
+    <mj-section background-color="#ffffff" padding="50px 40px 0">
+      <mj-column width="100%">
+        <mj-table width="100%" font-size="10px" padding="0px">
+         	<tr style="border-bottom:1px solid #cfcfcf">
+          	<th style="text-align:left">ТОВАРЫ</th>
+            <th style="text-align:center"></th>
+            <th style="text-align:center">КОЛЛИЧЕСТВО</th>
+            <th style="text-align:center">ЦЕНА, руб.</th>
+            <th style="text-align:center">СКИДКА, руб.</th>
+          </tr>
+          
+          <tr style="border-bottom:1px solid #cfcfcf">
+         		<td style="text-align:center"><a href="https://pandorarussia.ru/367962cz.html"><img alt="" src="http://denisv12.ru/pandora/pic/item-1.jpg" width="130px"/></a></td>
+            <td style="text-align:left"><a href="https://pandorarussia.ru/367962cz.html" style="color:#000000; text-decoration:none;">ПОДВЕСКА «БАБОЧКА»</a></td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">5 990</td>
+            <td style="text-align:center">1 000</td>
+          </tr>
+          
+          <tr style="border-bottom:1px solid #cfcfcf">
+         		<td style="text-align:center"><a href="https://pandorarussia.ru/197938.html"><img alt="" src="http://denisv12.ru/pandora/pic/item-2.jpg" width="130px"/></a></td>
+            <td style="text-align:left"><a href="https://pandorarussia.ru/197938.html" style="color:#000000; text-decoration:none;">КОЛЬЦО С ПОДВЕСКОЙ «КЛЕВЕР»</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">2 990</td>
+            <td style="text-align:center">0</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+      
+    //секция обшая цена
+      <mj-section background-color="#ffffff" padding="0px 40px 30px">
+        <mj-column width="100%">
+          <mj-table width="30%" font-size="10px" padding="20px 0px 0px 0px">
+          	<tr>
+            	<td>ОБЩАЯ СУММА</td>
+              <td><b>8 980 руб.</b></td>
+            </tr>
+            <tr>
+            	<td>ОБЩАЯ СКИДКА</td>
+              <td><b>1 000 руб.</b></td>
+            </tr>
+            <tr>
+            	<td>ДОСТАВКА</td>
+              <td><b>0 руб.</b></td>
+            </tr>
+            <tr>
+            	<td style="font-size:12px;font-weight:700;"><b>СУММА К ОПЛАТЕ</b></td>
+              <td style="font-size:12px;font-weight:700;"><b>7 980 руб.</b></td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      
+      //секция с любовью
+      <mj-section background-color="#ffffff" padding="30px 0px 40px">
+        <mj-column width="100%">
+          <mj-text align="center" font-size="16px" color="#464748;" padding="0px">
+          С любовью, PANDORA!
+        </mj-text>
+        </mj-column>
+      </mj-section>
+    
+      //секция наши преимущества
+      <mj-section background-color="#f4f4f4" padding="18px 0px 30px">
+        <mj-column width="100%">
+        <mj-text align="center" font-size="16px" color="#464748;" padding="0px">
+          НАШИ ПРЕИМУЩЕСТВА
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+      //секция наши преимущества 3 блока
+      <mj-section background-color="#f4f4f4" padding="0px 40px 30px">
+        <mj-column width="34.33%">
+        	<mj-table width="100%" font-size="11px" line-height="1.3" padding="0px">
+            <tr>
+              <td width=50><img alt="" src="http://denisv12.ru/pandora/pic/deliv.png" width="47px"/></td>
+              <td><b>БЕСПЛАТНАЯ<br>ДОСТАВКА</b><br>при покупке от 7000 руб.</td>
+            </tr>
+        </mj-table>
+        </mj-column>
+        <mj-column width="34.33%">
+        	<mj-table width="100%" font-size="11px" line-height="1.3" padding="0px">
+            <tr>
+              <td width=30><img alt="" src="http://denisv12.ru/pandora/pic/ring.png" width="24px"/></td>
+              <td><b>КЛУБ ПРИВИЛЕГИЙ</b><br>Эксклюзивные предложения <br>и бонусы.</td>
+            </tr>
+        </mj-table>
+        </mj-column>
+          
+        <mj-column width="31.33%">
+        	<mj-table width="100%" font-size="11px" line-height="1.3" padding="0px">
+            <tr>
+              <td width=33><img alt="" src="http://denisv12.ru/pandora/pic/gift.png" width="28px"/></td>
+              <td><b>ПОДАРОЧНАЯ УПАКОВКА</b><br>с каждым заказом<br><br></td>
+            </tr>
+        </mj-table>
+        </mj-column>
+      </mj-section>
+   
+    <mj-include path="./footer.mjml" />
+
+  </mj-body>
+
+</mjml>

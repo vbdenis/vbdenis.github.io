@@ -1,0 +1,19 @@
+<mj-section background-repeat=no-repeat background-size=cover background-url=http://denisv12.ru/pandora/pic/head-bg.jpg padding="18px 40px">
+
+  <mj-column width="60%" vertical-align="bottom">
+    <mj-text color="#fdfefe" padding="0" font-size="12px" line-height="14px"  align="left">
+      <a href='https://pandorarussia.ru/' style="text-decoration:none; color: #fdfefe;">Официальный интернет-магазин pandorarussia.ru</a>
+    </mj-text>
+  </mj-column>
+  
+  <mj-column width="25%">
+    <mj-text color="#fdfefe" padding="0" font-size="12px" line-height="14px" align="left">Связаться с нами</mj-text>
+    <mj-text color="#fdfefe" padding="0" font-size="12px" line-height="14px" align="left"><a href='tel:88007008338' style="text-decoration:none; color: #fdfefe;">Тел:&nbsp;8-800-700-8338 </a></mj-text>
+  </mj-column>
+  
+  <mj-column width="15%">
+    <mj-text color="#fdfefe" padding="0" font-size="12px" line-height="14px" align="left">24/7</mj-text>
+    <mj-text color="#fdfefe" padding="0" font-size="12px" line-height="14px" align="left">Вся Россия</mj-text>
+  </mj-column>
+
+</mj-section>

@@ -1,0 +1,34 @@
+<mj-section background-repeat=no-repeat background-size=cover background-url=http://denisv12.ru/pandora/pic/footer-bg.jpg padding="20px 40px">
+
+  <mj-column width="75%">
+    <mj-text color="#fdfefe" font-size="10px" line-height="16px" align=left padding="0">
+      © PANDORA  Все права защищены.<br>
+      Вы получили это письмо, потому что ваш e-mail<br>
+      был зарегестрирован на сайте pandorarussia.ru.<br>
+      Если вы не хотите получать наши письма нажмите <a href="#" style="color:#ffffff;">здесь.</a>
+    </mj-text>
+  </mj-column>
+      
+  <mj-column width="25%">
+    <mj-text color="#fdfefe" font-size="10px" line-height="16px" align=left padding="0">
+      Подписывайтесь <br> на нас в соцсетях:<br>      
+    </mj-text>
+      <mj-table padding="8px 0px 0px">
+          <tr style="list-style: none;line-height:1">
+            <td width="32px"> <a href="https://ok.ru/">
+                  <img width="24" src="http://denisv12.ru/pandora/pic/od.png" alt="ok"/>
+                </a> </td>
+            <td width="32px"> <a href="https://vk.com/">
+                  <img width="24" src="http://denisv12.ru/pandora/pic/vk.png" alt="vk"/>
+                </a> </td>
+            <td width="32px"> <a href="https://www.facebook.com/">
+                  <img width="24" src="http://denisv12.ru/pandora/pic/fb.png" alt="fb"/>
+                </a> </td>
+            <td width="32px"> <a href="https://www.instagram.com/">
+                  <img width="24" src="http://denisv12.ru/pandora/pic/inst.png" alt="inst"/>
+                </a> </td>
+          </tr>
+        </mj-table>
+  </mj-column>
+
+</mj-section>
