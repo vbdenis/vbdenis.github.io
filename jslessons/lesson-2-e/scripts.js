@@ -66,6 +66,7 @@ let appData = {
     savings: false
 };
  
+// 1 вариант цикла
 for (let i = 0; i < 2; i++) {
     let spending = prompt('Введите обязательную статью расходов в этом месяце', ''),
             cost = +prompt('Во сколько обойдется?', '');
@@ -78,6 +79,18 @@ for (let i = 0; i < 2; i++) {
     	i--;
     }
 };
+
+
+// 2 вариант цикла
+do {
+    console.log('vse OK!');
+    appData.expenses[spending] = cost;  
+}
+while 
+
+
+
+
 
 appData.moneyPerDay = appData.moneyData / 30;
 
