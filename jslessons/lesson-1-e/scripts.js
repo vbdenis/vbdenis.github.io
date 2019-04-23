@@ -27,7 +27,7 @@ spending = prompt('Введите обязательную статью расх
 
 console.log(appData);
 
-alert('Ващ бюджет на месяц: ' + appData.moneyData / 30);
+alert('Ваш бюджет на месяц: ' + appData.moneyData / 30);
 
 
 
