@@ -15,19 +15,19 @@ let appData = {
 };
 
 let spending = prompt('Введите обязательную статью расходов в этом месяце', ''),
-        cost = prompt('Во сколько обойдется?', '');
+        cost = +prompt('Во сколько обойдется?', '');
 
         appData.expenses[spending] = cost;
 
 spending = prompt('Введите обязательную статью расходов в этом месяце', ''),
-    cost = prompt('Во сколько обойдется?', '');
+    cost = +prompt('Во сколько обойдется?', '');
 
         appData.expenses[spending] = cost;
  
 
 console.log(appData);
 
-alert('Ващ бюджет на месяц: ' + money/30);
+alert('Ващ бюджет на месяц: ' + appData.moneyData / 30);
 
 
 
