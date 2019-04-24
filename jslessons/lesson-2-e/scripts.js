@@ -54,8 +54,7 @@
 'use strict';
 
 let money = +prompt('Ваш бюджет на месяц?', ''),
-     time = prompt('Введите дату в формате YYYY-MM-DD', '');
-     
+     time = prompt('Введите дату в формате YYYY-MM-DD', '');     
 
 let appData = {
     moneyData: money,
@@ -80,16 +79,23 @@ for (let i = 0; i < 2; i++) {
     }
 };
 
-
 // 2 вариант цикла
-do {
-    console.log('vse OK!');
-    appData.expenses[spending] = cost;  
-}
-while 
+// let i = 0;
+// while (i < 2) {
+//     let spending = prompt('Введите обязательную статью расходов в этом месяце', ''),
+//             cost = +prompt('Во сколько обойдется?', '');
+//     console.log(i);
+//     i++;
+// }
 
-
-
+// 3 вариант цикла
+// let i = 0;
+// do {
+//     let spending = prompt('Введите обязательную статью расходов в этом месяце', ''),
+//             cost = +prompt('Во сколько обойдется?', '');
+//             i++;
+// }
+// while (i < 2);
 
 
 appData.moneyPerDay = appData.moneyData / 30;
