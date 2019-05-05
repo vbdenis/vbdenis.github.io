@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', function(){
         let timer = document.getElementById(id),
             hours = timer.querySelector('.hours'),
             minutes = timer.querySelector('.minutes'),
-            seconds = timer.querySelector('.seconds');
+            seconds = timer.querySelector('.seconds'),
             timeInterval = setInterval(updateClock, 1000);
 
         function updateClock() {
