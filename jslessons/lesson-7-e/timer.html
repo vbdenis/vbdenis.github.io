@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>timer</title>
+</head>
+<body>
+	<style>
+		body {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  font-size: 100px;
+		  font-weight: 500;
+		  font-family: sans-serif;
+		}
+	</style>
+
+
+	<div class="timer">
+	  <span class="h">14</span>
+	  <span class="separator">:</span>
+	  <span class="m">26</span>
+	  <span class="separator">:</span>
+	  <span class="s">50</span>
+	</div>
+
+
+
+	<script>
+		window.addEventListener('DOMContentLoaded', function(){
+			function clock() {
+				let time = new Date(),
+						hour = time.getHours(),
+						minute = time.getMinutes(),
+						second = time.getSeconds(),
+						hourVal = document.querySelector('.h'),
+						minVAl = document.querySelector('.m'),
+						secVal = document.querySelector('.s');
+
+				if(hour < 10)
+					hour = "0" + hour;
+				if(minute < 10)
+					minute = "0" + minute;
+				if(second < 10)
+					second = "0" + second;
+
+				hourVal.textContent = hour;
+				minVAl.textContent = minute;
+				secVal.textContent = second;
+				setTimeout(clock, 1000);
+			};
+				clock();
+		});
+	</script>
+</body>
+</html>
