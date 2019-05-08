@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Class</title>
+</head>
+<body>
+	
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			padding: 50px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			font-size: 30px;
+			font-family: sans-serif;
+		}
+
+		div {
+			padding: 30px;
+			border: 5px solid red;
+		}
+	</style>
+
+	<script>
+		
+		class Options {
+			constructor(width, height, bg, fontSize, textAlign) {
+				this.width = width;
+				this.height = height;
+				this.bg = bg;
+				this.fontSize = fontSize;
+				this.textAlign = textAlign;
+			}
+			createDiv() {
+				let body = document.querySelector('body'),
+					element = document.createElement('div');
+					body.insertBefore(element, body.firstChild);
+					element.textContent = 'Привет, друг!';
+					element.style.cssText = `width: ${this.width}px; height: ${this.height}px; background: ${this.bg}; font-size: ${this.fontSize}px; text-align: ${this.textAlign}`;
+					console.log(body);
+					console.log(element);
+			}
+		};
+
+		const div = new Options(500, 250, 'green', 50, 'center');
+
+		div.createDiv();
+
+	</script>
+</body>
+</html>
