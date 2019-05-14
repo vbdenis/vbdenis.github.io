@@ -271,7 +271,7 @@ sendForm(formBottom);
             personsSum = +this.value;
             total = (daysSum + personsSum) * 4000;
 
-            if(restDays.value == '') {
+            if(restDays.value == '' || persons.value == '') {
                 totalValue.innerHTML = 0;
             } else {
                 totalValue.innerHTML = total;
@@ -282,11 +282,18 @@ sendForm(formBottom);
             daysSum = +this.value;
             total = (daysSum + personsSum) * 4000;
 
-            if(persons.value == '') {
+            if(persons.value == '' || restDays.value == '') {
                 totalValue.innerHTML = 0;
             } else {
                 totalValue.innerHTML = total;
             }
+        });
+
+        persons.addEventListener('input', function() {
+            this.value = this.value.replace('e', '');
+        });
+        restDays.addEventListener('input', function() {
+            this.value = this.value.replace('e', '');
         });
 
         place.addEventListener('change', function() {
