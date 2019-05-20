@@ -1,4 +1,4 @@
-function forms() {
+const forms = ()=> {
     let message = {
         loading: 'Загрузка...',
         success: 'Спасибо! Скоро мы с вами свяжемся!',
@@ -31,18 +31,20 @@ function forms() {
                     let json = JSON.stringify(obj);
                     request.send(json);
 
-                    request.addEventListener('readystatechange', function(){
+                    request.addEventListener('readystatechange', ()=> {
                         if (request.readyState < 4) {
                             resolve()
-                        } else if (request.readyState === 4 && request.status == 200) {
-                            resolve()
+                        } else if (request.readyState === 4) {
+                            if (request.status == 200 && request.status < 3) {
+                                resolve()
+                            }
                         } else {
                             reject()
                         }
                     })
                     request.send(data);
                 }
-            )}
+            )};
 
             function clearInput() {
                 for (let i = 0; i < input.length; i++) {
@@ -55,7 +57,7 @@ function forms() {
                 .then(()=> statusMessage.innerHTML = message.loading)
                 .then(()=> statusMessage.innerHTML = message.success)
                 .catch(()=> statusMessage.innerHTML = message.failure)
-                .this(clearInput)
+                .then(clearInput)
 
     });
 }
@@ -65,7 +67,7 @@ sendForm(formBottom);
 
 
     // ввод чисел в инпуты с телефонами
-    document.oninput = function() {
+    document.oninput = ()=> {
         let input = document.querySelectorAll('input[type=tel]');
         input.forEach(function(item) {
             item.value = item.value.replace(/[^\+\d]/g, '');

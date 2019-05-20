@@ -1,4 +1,4 @@
-function slider() {
+const slider = ()=> {
     let slideIndex = 1,
         slides = document.querySelectorAll('.slider-item'),
         prev = document.querySelector('.prev'),
@@ -39,10 +39,10 @@ function slider() {
     }
 
     // навешиваем обработчики событий на стрелки вперед и назад
-    prev.addEventListener('click', function() {
+    prev.addEventListener('click', ()=> {
         plusSlides(-1);
     });
-    next.addEventListener('click', function() {
+    next.addEventListener('click', ()=> {
         plusSlides(1);
     });
 

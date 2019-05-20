@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function calculator() {
+const calculator = ()=> {
     let persons = document.querySelectorAll('.counter-block-input')[0],
         restDays = document.querySelectorAll('.counter-block-input')[1],
         place = document.getElementById('select'),
@@ -108,7 +108,7 @@ function calculator() {
             personsSum = +this.value;
             total = (daysSum + personsSum) * 4000;
 
-            if(restDays.value == '' || persons.value == '') {
+            if (restDays.value == '' || persons.value == '') {
                 totalValue.innerHTML = 0;
             } else {
                 totalValue.innerHTML = total;
@@ -119,7 +119,7 @@ function calculator() {
             daysSum = +this.value;
             total = (daysSum + personsSum) * 4000;
 
-            if(persons.value == '' || restDays.value == '') {
+            if (persons.value == '' || restDays.value == '' || persons.value == '0' || restDays.value == '0') {
                 totalValue.innerHTML = 0;
             } else {
                 totalValue.innerHTML = total;
@@ -127,14 +127,14 @@ function calculator() {
         });
 
         persons.addEventListener('input', function() {
-            this.value = this.value.replace('e', '');
+            this.value = this.value.replace(/^0|[^\d]/g, '');
         });
         restDays.addEventListener('input', function() {
-            this.value = this.value.replace('e', '');
+            this.value = this.value.replace(/^0|[^\d]/g, '');
         });
 
         place.addEventListener('change', function() {
-            if (restDays.value == '' || persons.value == '') {
+            if (restDays.value == '' || persons.value == '' || persons.value == '0' || restDays.value == '0') {
                 totalValue.innerHTML = 0;
             } else {
                 let a = total;
@@ -155,7 +155,7 @@ module.exports = calculator;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function forms() {
+const forms = ()=> {
     let message = {
         loading: 'Загрузка...',
         success: 'Спасибо! Скоро мы с вами свяжемся!',
@@ -188,18 +188,20 @@ function forms() {
                     let json = JSON.stringify(obj);
                     request.send(json);
 
-                    request.addEventListener('readystatechange', function(){
+                    request.addEventListener('readystatechange', ()=> {
                         if (request.readyState < 4) {
                             resolve()
-                        } else if (request.readyState === 4 && request.status == 200) {
-                            resolve()
+                        } else if (request.readyState === 4) {
+                            if (request.status == 200 && request.status < 3) {
+                                resolve()
+                            }
                         } else {
                             reject()
                         }
                     })
                     request.send(data);
                 }
-            )}
+            )};
 
             function clearInput() {
                 for (let i = 0; i < input.length; i++) {
@@ -212,7 +214,7 @@ function forms() {
                 .then(()=> statusMessage.innerHTML = message.loading)
                 .then(()=> statusMessage.innerHTML = message.success)
                 .catch(()=> statusMessage.innerHTML = message.failure)
-                .this(clearInput)
+                .then(clearInput)
 
     });
 }
@@ -222,7 +224,7 @@ sendForm(formBottom);
 
 
     // ввод чисел в инпуты с телефонами
-    document.oninput = function() {
+    document.oninput = ()=> {
         let input = document.querySelectorAll('input[type=tel]');
         input.forEach(function(item) {
             item.value = item.value.replace(/[^\+\d]/g, '');
@@ -242,7 +244,7 @@ module.exports = forms;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function modals() {
+const modals = ()=> {
       let more = document.querySelector('.more'),
         overlay = document.querySelector('.overlay'),
         close = document.querySelector('.popup-close'),
@@ -279,7 +281,7 @@ module.exports = modals;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function slider() {
+const slider = ()=> {
     let slideIndex = 1,
         slides = document.querySelectorAll('.slider-item'),
         prev = document.querySelector('.prev'),
@@ -320,10 +322,10 @@ function slider() {
     }
 
     // навешиваем обработчики событий на стрелки вперед и назад
-    prev.addEventListener('click', function() {
+    prev.addEventListener('click', ()=> {
         plusSlides(-1);
     });
-    next.addEventListener('click', function() {
+    next.addEventListener('click', ()=> {
         plusSlides(1);
     });
 
@@ -349,7 +351,7 @@ module.exports = slider;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function tabs() {
+const tabs = ()=> {
     let tab = document.querySelectorAll('.info-header-tab'),
         info = document.querySelector('.info-header'),
         tabContent = document.querySelectorAll('.info-tabcontent');
@@ -395,7 +397,7 @@ module.exports = tabs;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function timer() {
+const timer = ()=> {
      let deadline = '2019-06-05';
 
     function getTimeRemaining(endtime) {

@@ -1,4 +1,4 @@
-function calculator() {
+const calculator = ()=> {
     let persons = document.querySelectorAll('.counter-block-input')[0],
         restDays = document.querySelectorAll('.counter-block-input')[1],
         place = document.getElementById('select'),
@@ -13,7 +13,7 @@ function calculator() {
             personsSum = +this.value;
             total = (daysSum + personsSum) * 4000;
 
-            if(restDays.value == '' || persons.value == '') {
+            if (restDays.value == '' || persons.value == '') {
                 totalValue.innerHTML = 0;
             } else {
                 totalValue.innerHTML = total;
@@ -24,7 +24,7 @@ function calculator() {
             daysSum = +this.value;
             total = (daysSum + personsSum) * 4000;
 
-            if(persons.value == '' || restDays.value == '') {
+            if (persons.value == '' || restDays.value == '' || persons.value == '0' || restDays.value == '0') {
                 totalValue.innerHTML = 0;
             } else {
                 totalValue.innerHTML = total;
@@ -32,14 +32,14 @@ function calculator() {
         });
 
         persons.addEventListener('input', function() {
-            this.value = this.value.replace('e', '');
+            this.value = this.value.replace(/^0|[^\d]/g, '');
         });
         restDays.addEventListener('input', function() {
-            this.value = this.value.replace('e', '');
+            this.value = this.value.replace(/^0|[^\d]/g, '');
         });
 
         place.addEventListener('change', function() {
-            if (restDays.value == '' || persons.value == '') {
+            if (restDays.value == '' || persons.value == '' || persons.value == '0' || restDays.value == '0') {
                 totalValue.innerHTML = 0;
             } else {
                 let a = total;
