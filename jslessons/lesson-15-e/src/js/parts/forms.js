@@ -28,8 +28,8 @@ const forms = ()=> {
                         obj[key] = value;
                     });
                     
-                    let json = JSON.stringify(obj);
-                    request.send(json);
+                    let data = JSON.stringify(obj);
+                    // request.send(json);
 
                     request.addEventListener('readystatechange', ()=> {
                         if (request.readyState < 4) {
