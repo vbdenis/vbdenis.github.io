@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /*roistat=
+Disallow: /*/d_*.jpg$
+Disallow: /*/d_*.png$
+Disallow: /*/d_*.gif$
+Host: https://aevrika.ru
+Sitemap: https://aevrika.ru/sitemap.xml
