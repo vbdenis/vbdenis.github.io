@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /
 Disallow: /*roistat=
 Disallow: /*/d_*.jpg$
 Disallow: /*/d_*.png$
