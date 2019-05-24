@@ -185,16 +185,14 @@ const forms = ()=> {
                         obj[key] = value;
                     });
                     
-                    let json = JSON.stringify(obj);
-                    request.send(json);
+                    let data = JSON.stringify(obj);
+                    // request.send(json);
 
                     request.addEventListener('readystatechange', ()=> {
                         if (request.readyState < 4) {
                             resolve()
-                        } else if (request.readyState === 4) {
-                            if (request.status == 200 && request.status < 3) {
-                                resolve()
-                            }
+                        } else if (request.readyState === 4 && request.status == 200) {
+                            resolve()                            
                         } else {
                             reject()
                         }
