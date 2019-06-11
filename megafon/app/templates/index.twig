@@ -1,0 +1,479 @@
+{% extends "layouts/default.twig" %}
+{% set title="Главная" %}
+{% block content %}
+
+	<section class="section hero-section">
+		<div class="container">
+			<div class="hero-section__content">
+				<h1 class="hero-section__title">Кристально чистый<br> звук с технологией<br> VoLTE</h1>
+				<div class="hero-section__subtitle">Переходи на новый уровень общения</div>				
+			</div>
+		</div>
+	</section><!-- hero-section -->
+
+
+	<section class="section advantages-section">
+		<div class="container">
+			<div class="grid flex-grid">
+				<div class="column">
+					<h2 class="section__title advantages-section__title">VoLTE — голосовая связь последнего поколения</h2>
+					<div class="section__subtitle advantages-section__subtitle">Технология Voice over LTE передаёт<br> звонок по высокоскоростной сети 4G+<br> (LTE). Голосовой поток доставляется в<br> разы быстрее и в лучшем качестве.</div>
+				</div>
+				<div class="column">
+					<div class="advantages__list">
+						<div class="advantage">
+							<div class="advantage__content">
+								<div class="advantage__icon">
+									<svg>
+									 	<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#voice"></use>
+									</svg>
+								</div>
+								<div class="advantage__title">Голос звучит чисто</div>
+								<div class="advantage__description">Настолько естественно, как будто собеседник находится рядом</div>
+							</div>
+						</div>
+
+						<div class="advantage">
+							<div class="advantage__content">
+								<div class="advantage__icon">
+									<svg>
+									 	<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#4g"></use>
+									</svg>
+								</div>
+								<div class="advantage__title">4G не исчезнет</div>
+								<div class="advantage__description">Вы можете и звонить, и пользоваться 4G интернетом одновременно</div>
+							</div>
+						</div>
+
+						<div class="advantage">
+							<div class="advantage__content">
+								<div class="advantage__icon">
+									<svg>
+									 	<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#fast-call"></use>
+									</svg>
+								</div>
+								<div class="advantage__title">Мгновенный дозвон</div>
+								<div class="advantage__description">Соединение происходит очень быстро — в&nbsp;течение 2 секунд</div>
+							</div>
+						</div>
+
+						<div class="advantage">
+							<div class="advantage__content">
+								<div class="advantage__icon">
+									<svg>
+									 	<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#gift"></use>
+									</svg>
+								</div>
+								<div class="advantage__title">И никакой доплаты</div>
+								<div class="advantage__description">Технология VoLTE доступна бесплатно и не требует подключения</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- advantages-section -->
+	
+
+	<section class="section slider-section">
+		<div class="slider__wrap">
+			<div class="slider" style="background-image: url(img/slider-1.jpg);">
+				<div class="slider-block" data-img="img/slider-1.jpg">
+					<div class="slider-block__title">Наслаждайтесь<br> чистым звуком</div>
+					<div class="slider-block__subitle">Даже если между вами<br> тысячи километров</div>
+					<div class="slider-block__arr"></div>
+				</div>
+				<div class="slider-block" data-img="img/slider-2.jpg">
+					<div class="slider-block__title">Несколько дел<br> одновременно</div>
+					<div class="slider-block__subitle">Разговаривайте по телефону и<br> следите за дорогой по навигатору</div>
+					<div class="slider-block__arr"></div>
+				</div>
+				<div class="slider-block" data-img="img/slider-3.jpg">
+					<div class="slider-block__title">Больше времени<br> на общение</div>
+					<div class="slider-block__subitle">И меньше — на ожидание<br> соединения с собеседником</div>
+					<div class="slider-block__arr"></div>
+				</div>
+			</div>
+			<div class="prev"><div class="arrow-left"></div></div>
+			<div class="next"><div class="arrow-right"></div></div>
+			<div class="slider-dots">
+				<div class="dot dot-active"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>			
+		</div>
+
+	</section><!-- slider-section -->
+
+
+
+	<section class="section rate-section">
+		<div class="container">
+			<h2 class="section__title rate-section__title">Выберите тариф</h2>
+			<div class="section__subtitle">Выбирайте тарифы «Включайся!» и используйте<br> возможности VoLTE по максимуму. VoLTE не расходует<br> интернет-трафик вашего тарифа, а звонки по VoLTE уже<br> входят в ваш пакет минут.</div>	
+		</div>
+		<div class="rate-section__tabs">
+			<div class="tab">
+				<ul class="tab__menu">
+					<li class="tab__menu-item active">Смартфон</li>
+					<li class="tab__menu-item">Планшет</li>
+					<li class="tab__menu-item">Модем</li>
+				</ul>
+				<div class="tab__content">
+					<div class="tab__content-item">
+						<div class="rate-list">
+							<div class="rate">
+								<div class="rate__top">									
+									<div class="rate__title">Включайся! Слушай<br>Акция</div>
+									<div class="rate__options">700 минут</div>
+									<div class="rate__description">Безлимитный интернет<br> на все сервисы</div>
+									<div class="rate__social">
+										<span class="rate__social-img">
+											<svg viewBox="0 0 42 20">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#infinity"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="rate__bottom">
+									<div class="rate__cost">650 ₽</div>
+									<div class="rate__period">в месяц</div>
+									<a href="#" class="button rate__button round-hover">Подробнее</a>
+									<a href="#" class="more rate__more">Перейти в МегаФон <span><svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></span></a>
+								</div>
+							</div>
+
+							<div class="rate">
+								<div class="rate__top">	
+									<div class="rate__title">Включайся! Общайся</div>
+									<div class="rate__options">850 минут</div>
+									<div class="rate__description">Безлимитный интернет<br> на все сервисы</div>
+									<div class="rate__social">
+										<span class="rate__social-img">
+											<svg viewBox="0 0 42 20">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#infinity"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="rate__bottom">
+									<div class="rate__cost">800 ₽</div>
+									<div class="rate__period">в месяц</div>
+									<a href="#" class="button rate__button round-hover">Подробнее</a>
+									<a href="#" class="more rate__more">Перейти в МегаФон <span><svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></span></a>
+								</div>
+							</div>
+
+							<div class="rate">
+								<div class="rate__top">	
+									<div class="rate__title">Включайся! Смотри<br>Акция</div>
+									<div class="rate__options">750 минут | 20 ГБ</div>
+									<div class="rate__description">Безлимитный интернет на видео,<br> музыку и мессенджеры</div>
+									<div class="rate__social">
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#youtube"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vimeo"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vk"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#inst"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--more">+&nbsp;ещё&nbsp;9</span>
+									</div>
+								</div>
+								<div class="rate__bottom">
+									<div class="rate__cost">750 ₽</div>
+									<div class="rate__period">в месяц</div>
+									<a href="#" class="button rate__button round-hover">Подробнее</a>
+									<a href="#" class="more rate__more">Перейти в МегаФон <span><svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></span></a>
+								</div>
+							</div>
+
+							<div class="rate">
+								<div class="rate__top">	
+									<div class="rate__title">Включайся! Смотри+</div>
+									<div class="rate__options">1500 минут | 30 ГБ</div>
+									<div class="rate__description">Безлимитный интернет на видео,<br> музыку и мессенджеры</div>
+									<div class="rate__social">
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#youtube"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vimeo"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vk"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#inst"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--more">+&nbsp;ещё&nbsp;9</span>
+									</div>
+								</div>
+								<div class="rate__bottom">
+									<div class="rate__cost">1000 ₽</div>
+									<div class="rate__period">в месяц</div>
+									<a href="#" class="button rate__button round-hover">Подробнее</a>
+									<a href="#" class="more rate__more">Перейти в МегаФон <span><svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="tab__content-item">
+						<div class="rate-list">
+							<div class="rate">
+								<div class="rate__top">	
+									<div class="rate__title">Включайся! Смотри<br>Акция</div>
+									<div class="rate__options">750 минут | 20 ГБ</div>
+									<div class="rate__description">Безлимитный интернет на видео,<br> музыку и мессенджеры</div>
+									<div class="rate__social">
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#youtube"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vimeo"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vk"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#inst"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--more">+&nbsp;ещё&nbsp;9</span>
+									</div>
+								</div>
+								<div class="rate__bottom">
+									<div class="rate__cost">750 ₽</div>
+									<div class="rate__period">в месяц</div>
+									<a href="#" class="button rate__button round-hover">Подробнее</a>
+									<a href="#" class="more rate__more">Перейти в МегаФон <span><svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></span></a>
+								</div>
+							</div>
+
+							<div class="rate">
+								<div class="rate__top">	
+									<div class="rate__title">Включайся! Смотри+</div>
+									<div class="rate__options">1500 минут | 30 ГБ</div>
+									<div class="rate__description">Безлимитный интернет на видео,<br> музыку и мессенджеры</div>
+									<div class="rate__social">
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#youtube"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vimeo"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vk"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#inst"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--more">+&nbsp;ещё&nbsp;9</span>
+									</div>
+								</div>
+								<div class="rate__bottom">
+									<div class="rate__cost">1000 ₽</div>
+									<div class="rate__period">в месяц</div>
+									<a href="#" class="button rate__button round-hover">Подробнее</a>
+									<a href="#" class="more rate__more">Перейти в МегаФон <span><svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab__content-item">
+						<div class="rate-list">
+							<div class="rate">
+								<div class="rate__top">	
+									<div class="rate__title">Включайся! Смотри+</div>
+									<div class="rate__options">1500 минут | 30 ГБ</div>
+									<div class="rate__description">Безлимитный интернет на видео,<br> музыку и мессенджеры</div>
+									<div class="rate__social">
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#youtube"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vimeo"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#vk"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--web">
+											<svg viewBox="0 0 35 35">
+										 		<use xlink:href="img/icon-svg/sprite/sprite-svg.svg#inst"></use>
+											</svg>
+										</span>
+										<span class="rate__social-img rate__social-img--more">+&nbsp;ещё&nbsp;9</span>
+									</div>
+								</div>
+								<div class="rate__bottom">
+									<div class="rate__cost">1000 ₽</div>
+									<div class="rate__period">в месяц</div>
+									<a href="#" class="button rate__button round-hover">Подробнее</a>
+									<a href="#" class="more rate__more">Перейти в МегаФон <span><svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- rate-section__tabs -->
+
+		<div class="howtouse">
+			<div class="container">
+				<div class="howtouse__content">
+					<div class="grid flex-grid">
+						<div class="column">
+							<h2 class="section__title">Что нужно, чтобы<br> пользоваться VoLTE</h2>
+							<div class="section__subtitle">Технология уже доступна на многих<br> устройствах — проверьте настройки<br> своего смартфона и тип SIM-карты. </div>
+						</div>
+						<div class="column">
+							<div class="howtouse__list">
+								<div class="howtouse-block">
+									<div class="howtouse-block__title">SIM-карта с поддержкой 4G+</div>
+									<div class="howtouse-block__description">Наберите команду *507#, чтобы проверить, подходит ли ваша SIM-карта для сети 4G+. Если не подходит — замените её бесплатно на USIM-карту в любом салоне МегаФона.</div>
+									<a href="" class="more howtouse-block__link">Адреса салонов <svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></a>
+								</div>
+
+								<div class="howtouse-block">
+									<div class="howtouse-block__title">Смартфон с поддержкой VoLTE</div>
+									<div class="howtouse-block__description">Ваш смартфон должен поддерживать технологию VoLTE (<a href="" style="color:#34aaf2;text-decoration:none;">см. список устройств</a>). Не забудьте проверить настройки и обновить прошивку до последней версии.</div>
+									<div class="smartphone__list">
+										<a href="" class="smartphone">
+											<div class="smartphone__img-wrap">
+												<img src="img/iphone.png" alt="" class="smartphone__img">
+												<div class="smartphone__price">70 290 ₽</div>
+											</div>
+											<div class="smartphone__name">Apple iPhone X 256GB Space Gray</div>
+										</a>
+										<a href="" class="smartphone">
+											<div class="smartphone__img-wrap">
+												<img src="img/samsung.png" alt="" class="smartphone__img">
+												<div class="smartphone__price">69 990 ₽</div>
+											</div>
+											<div class="smartphone__name">Смартфон Samsung Galaxy S9 64GB Черный бриллиант</div>
+										</a>
+									</div>
+									<a href="" class="more howtouse-block__link">Выбрать смартфон с VoLTE <svg viewBox="0 0 4 8"><use xlink:href="img/icon-svg/sprite/sprite-svg.svg#chevron-right"></use></svg></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- howtouse -->
+
+		<div class="vowifi">
+			<div class="container">
+				<div class="vowifi__content">
+					<div class="grid flex-grid">
+						<div class="column">
+							<div class="vowifi__left">
+								<h2 class="section__title section__title--white">VoWi-Fi — связь везде,<br> где есть роутер</h2>							
+							</div>
+						</div>
+						<div class="column">
+							<div class="vowifi__right">
+								<div class="section__subtitle vowifi__subtitle">В местах с плохим покрытием, где LTE недоступен, можно подключаться к любому  Wi-Fi-роутеру. Технология Voice over Wi-Fi использует роутер как базовую станцию и улучшает качество сотовой связи.</div>
+								<div class="vowifi-list">
+									<div class="vowifi-item">
+										<div class="vowifi-item__title">Разговор не прерывается</div>
+										<div class="vowifi-item__description">Для передачи звонка используется стабильное подключение</div>
+									</div>
+									<div class="vowifi-item">
+										<div class="vowifi-item__title">Лучшее качество</div>
+										<div class="vowifi-item__description">Качество сигнала связи становится лучше даже в местах без LTE</div>
+									</div>
+									<div class="vowifi-item">
+										<div class="vowifi-item__title">Экономия заряда</div>
+										<div class="vowifi-item__description">Телефон расходует меньше энергии в местах с плохим покрытием</div>
+									</div>
+								</div>
+							</div>								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section faq-section">
+		<div class="container">
+			<h2 class="section__title faq__section-title">Часто задаваемые<br> вопросы </h2>
+
+			<div class="accordion">
+				<div class="accordion__title">Какие устройства поддерживают VoLTE и как настроить VoLTE? <span class="accordion__arr"></span></div>
+				<div class="accordion__content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit recusandae nam repellendus provident magnam, veniam iusto, accusantium commodi tenetur dolor earum repellat voluptatibus alias aliquam corporis. Ad quos vel excepturi, provident atque qui veritatis impedit sint minus unde vitae vero adipisci nulla magni laboriosam! Sequi laudantium, rem nostrum. Velit.
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="accordion__title">Как проверить, что вы используете VoLTE? <span class="accordion__arr"></span></div>
+				<div class="accordion__content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit recusandae nam repellendus provident magnam, veniam iusto, accusantium commodi tenetur dolor earum repellat voluptatibus alias aliquam corporis. Ad quos vel excepturi, provident atque qui veritatis impedit sint minus unde vitae vero adipisci nulla magni laboriosam! Sequi laudantium, rem nostrum. Velit.
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="accordion__title">Особенности предоставления услуги <span class="accordion__arr"></span></div>
+				<div class="accordion__content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit recusandae nam repellendus provident magnam, veniam iusto, accusantium commodi tenetur dolor earum repellat voluptatibus alias aliquam corporis. Ad quos vel excepturi, provident atque qui veritatis impedit sint minus unde vitae vero adipisci nulla magni laboriosam! Sequi laudantium, rem nostrum. Velit.
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

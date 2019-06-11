@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
+package-lock.json
+css/*.css
+build/
+app/img/icon-svg/sprite-svg.svg
