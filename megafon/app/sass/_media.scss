@@ -58,7 +58,9 @@
 			margin-bottom: 0;
 		}
 	}
-
+	.advantages-section__subtitle {
+		margin-bottom: 30px;
+	}
 	.advantage {
 		margin-bottom: 45px;
 		padding: 0;
@@ -112,13 +114,18 @@
 	.slider-dots {
 		display: flex;
 	}
+	.rate-section__tabs {
+		margin-bottom: 55px;
+	}
 	.rate-list {
 		margin-right: -16px;
 	}
 	.tab__menu-item {
 		margin-right: 35px;
 	}
-	
+	.howtouse {
+		margin-bottom: 55px;
+	}
 	.howtouse__content {
 		padding: 55px 16px;
 		margin: auto -16px;
@@ -155,5 +162,8 @@
 		letter-spacing: 0.5px;
 		line-height: 24px;
 		margin-bottom: 12px;
+	}
+	.faq__section-title {
+		margin-bottom: 40px;
 	}
 }

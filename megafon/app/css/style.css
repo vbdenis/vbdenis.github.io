@@ -123,7 +123,6 @@ h2 {
 
 .section {
   padding: 80px 0;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -146,6 +145,10 @@ h2 {
   display: none;
 }
 
+.header__nav-wrap {
+  background-color: #333333;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -165,7 +168,6 @@ h2 {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0px 40px 0px 24px;
-  background-color: #333333;
 }
 
 .sites-nav__list {
@@ -434,7 +436,7 @@ h2 {
 }
 
 .rate-section__tabs {
-  margin: 40px auto;
+  margin: 40px auto 80px;
   margin-top: 40px;
   max-width: 1152px;
   padding: 0px 16px;
@@ -1027,6 +1029,8 @@ h2 {
 }
 
 .slider__wrap {
+  margin: auto;
+  max-width: 1280px;
   position: relative;
 }
 
@@ -1181,6 +1185,10 @@ h2 {
     margin-bottom: 0;
   }
 
+  .advantages-section__subtitle {
+    margin-bottom: 30px;
+  }
+
   .advantage {
     margin-bottom: 45px;
     padding: 0;
@@ -1251,12 +1259,20 @@ h2 {
     display: flex;
   }
 
+  .rate-section__tabs {
+    margin-bottom: 55px;
+  }
+
   .rate-list {
     margin-right: -16px;
   }
 
   .tab__menu-item {
     margin-right: 35px;
+  }
+
+  .howtouse {
+    margin-bottom: 55px;
   }
 
   .howtouse__content {
@@ -1303,5 +1319,9 @@ h2 {
     letter-spacing: 0.5px;
     line-height: 24px;
     margin-bottom: 12px;
+  }
+
+  .faq__section-title {
+    margin-bottom: 40px;
   }
 }
